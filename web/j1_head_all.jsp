@@ -12,8 +12,10 @@
         
     </head>
     <body>
-        <div align="center" style="background-image:url(./graphics/apple_header1.jpg);">
+       <div align="center" style="background-image:url(./graphics/apple_header2.png); background-repeat:no-repeat; background-position: center">
+           <h1>    COllege</h1>
         <image src="./graphics/middle_header.png">
+        <h1></h1>
         </div>
     </body>
 </html>
