@@ -193,6 +193,62 @@ public class notice_model {
         
     }
     
+   public static int deleteNotice(int i)
+    {   
+        Connection conn=(Connection) new c_c_db().getDB();
+        notice_model n=new notice_model();
+        int deleted=0,deleted_asso=0;
+        ResultSet rs=null;
+    
+        String query="delete from notice where n_id="+i;
+        String query_asso="delete from notice_asso where na_id="+i;
+        try {
+            java.sql.Statement st=conn.createStatement();
+           // st.execute(query);
+           deleted=st.executeUpdate(query);
+           deleted_asso=st.executeUpdate(query_asso);
+           System.out.print("notice_Delete "+deleted+" and association deleted "+deleted_asso);
+        } catch (SQLException ex) {
+           System.out.print("notice_Delete_execption "+ex);
+          return deleted;
+        }
+        
+        return deleted;
+        
+        
+    }
+   
+   
+   public static notice_model fetchNoticebyClass(String branch,int level)
+    {   
+        Connection conn=(Connection) new c_c_db().getDB();
+        notice_model n=new notice_model();
+        ResultSet rs=null;
+        //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
+        String query="SELECT n_id, n_title, n_body, n_sender_id, n_urgency, n_time FROM  `notice` ,  `notice_asso` WHERE notice_asso.na_id = notice.n_id AND notice_asso.na_branch =  '"+branch+"' AND notice_asso.na_level =  '"+level+"'";
+        try {
+            java.sql.Statement st=conn.createStatement();
+           // st.execute(query);
+           rs=st.executeQuery(query);
+           
+        } catch (SQLException ex) {
+           System.out.print("notice_fetchbyclass_execption "+ex);
+          return n;
+        }
+        try {
+            while(rs.next())
+            {
+                System.out.println(""+rs.getInt(1)+rs.getString(2)+rs.getString(3)+rs.getString(4)+rs.getInt(5)+rs.getDate(6));
+            }
+            
+            
+        } catch (SQLException ex) {
+            System.out.println(ex);
+        }
+        return n;
+        
+        
+    }
     
     
 }

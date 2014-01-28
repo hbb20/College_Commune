@@ -16,9 +16,24 @@ public class notice_check {
     {
         notice_model nt=new notice_model("trial", "body", "KKP", 2);
         boolean b=nt.storeNotice();
-        System.out.print(b);
-        notice_model n1=notice_model.fetchNotice(12);
-        System.out.print(n1.getNotice_time());
+       // System.out.print(b);
+        
+        
+        //fatch notice
+                 // notice_model n1=notice_model.fetchNotice(12);
+                 // System.out.print(n1.getNotice_time());
+        
+        
+        
+        
+        
+        //delete
+                // { int deleted=notice_model.deleteNotice(12);}
+        
+        //fatch notice by class
+        notice_model.fetchNoticebyClass("IT",2);
         
     }
+
+    
 }
