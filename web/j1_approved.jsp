@@ -33,7 +33,7 @@ if(msg==null)
         
                     <h1 align="center">Approved</h1> 
                 
-                    <h3 align="center">Your <%=(String)session.getAttribute("temp_id")%> Account Has been Approved by the  Admin,<br/> Please Enter Profile Details</h3>
+                    <h3 align="center">Your <%=(String)session.getAttribute("user_id")%> Account Has been Approved by the  Admin,<br/> Please Enter Profile Details</h3>
                 
             
         <div align="center">

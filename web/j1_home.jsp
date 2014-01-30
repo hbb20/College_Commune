@@ -33,10 +33,14 @@
                                   {msg="";  }
 
     %>
-    <body>
-        <div align="right">
-        <div style="background-image: url(./graphics/div_green.png);margin-left:75%;" >
-            <form name="f1" action="s1_user_check" method="post">
+    
+    <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
+       
+        
+     
+    
+      <div style="background-image: url(./graphics/div_blue.png)" align="right">
+            <form name="f1" action="s1_user_check" method="post" target="content_frame">
                 <table>
                     <tr>
                         <td colspan="2">
@@ -60,9 +64,9 @@
                 </table>              
             </form>
         </div>
-           
-            <div style="background-image: url(./graphics/div_blue.png);margin-left:75%  " >
-            <form name="f1" action="s1_user_check" method="post">
+       
+            <div style="background-image: url(./graphics/div_blue.png)" align="right">
+                <form name="f1" action="s1_user_check" method="post" target="content_frame">
                 <table>
                     <tr>
                         <td colspan="2">
@@ -84,8 +88,9 @@
                     </tr>
                 </table>                               
             </form>
-        </div>
-     </div>     
+        </div> 
+               
+            </tr>
+        </table>
     </body>
-    
 </html>

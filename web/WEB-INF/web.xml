@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <context-param>
+        <description>the backround image that will be used at back of almost all</description>
+        <param-name>background_image</param-name>
+        <param-value>./graphics/main_bk_5.jpg</param-value>
+    </context-param>
+    <context-param>
+        <param-name>startup_page</param-name>
+        <param-value>./jM1_startup.jsp</param-value>
+    </context-param>
     <servlet>
         <servlet-name>s1_user_check</servlet-name>
         <servlet-class>a_general_package.s1_user_check</servlet-class>
@@ -62,6 +71,6 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>j1_home.jsp</welcome-file>
+        <welcome-file>jM1_startup.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

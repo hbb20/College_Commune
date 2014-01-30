@@ -11,11 +11,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
     </head>
-    <body>
-       <div align="center" style="background-image:url(./graphics/apple_header2.png); background-repeat:no-repeat; background-position: center; back">
-           <h1>      &nbsp;</h1>
-        <image src="./graphics/middle_header.png">
-        <h1></h1><h1>      &nbsp;</h1>
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+    <!--  <div align="center" style="background-image:url(./graphics/apple_header2.png); background-repeat:no-repeat; background-position: center; back">-->
+           <div align="center">
+        
+        <image src="./graphics/college_commune4.png">
+ 
         </div>
     </body>
 </html>
