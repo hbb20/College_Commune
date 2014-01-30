@@ -224,8 +224,8 @@ public String verify_user(String user_id,String pass)
             ResultSet rs=null;
               System.out.print("um_ck1");
                       
-            //String query="select password from users where user_id='"+user_id+"'";
-            String query="select password from users where user_id='it_admin'";
+            String query="select password from users where user_id='"+user_id+"'";
+          //  String query="select password from users where user_id=''";
             Statement st=conn.createStatement();
             System.out.print("um_ck2");
                       st.execute(query);

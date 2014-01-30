@@ -11,17 +11,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  
     </head>
-    <body>
+    <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
         <table border="0">
             <thead>
                 <tr>Menubar
                 </tr>
             </thead>
             <tbody>
-                <tr><a href="f_test1.jsp" target="contentHolder">Test1</a>
-                </tr>
-                <tr><a href="f_test2.jsp" target="contentHolder">Test2</a>
-                </tr>
+                <tr><td><a href="Notice.jsp" target="contentHolder">Notice</a>
+                    </td></tr>
+                <tr><td><a href="f_test2.jsp" target="contentHolder">Profile</a>
+                    </td></tr>
             </tbody>
         </table>
 
