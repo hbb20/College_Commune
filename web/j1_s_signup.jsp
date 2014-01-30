@@ -5,14 +5,13 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Student Sign Up</title>
     </head>
-    <body>
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <h1 align="center">Student Sign up</h1>
         <form action="s1_s_signup" method="post">
           <table align="center">
@@ -68,7 +67,7 @@
                 </tr>
                 <tr>
                     <td align="right">GTU enrollment</td> 
-                    <td><input type="text" name="user_id" value="<%=(String)session.getAttribute("temp_id")%>" readonly="readonly">
+                    <td><input type="text" name="user_id" value="<%=(String)session.getAttribute("user_id")%>" readonly="readonly">
                     
                 </tr>
                 <tr>
@@ -115,7 +114,7 @@
                 <tr><td colspan="2"><h2>Authentication</h2></td></tr>
                 <tr>
                     <td align="right">User ID</td> 
-                    <td><input type="text" name="user_id" value="<%=(String)session.getAttribute("temp_id")%>" readonly="readonly">
+                    <td><input type="text" name="user_id" value="<%=(String)session.getAttribute("user_id")%>" readonly="readonly">
                     
                 </tr>
                 <tr><td>password</td><td><input type="password" name="pwd1" value="" /></td></tr>

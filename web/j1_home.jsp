@@ -40,7 +40,7 @@
      
     
       <div style="background-image: url(./graphics/div_blue.png)" align="right">
-            <form name="f1" action="s1_user_check" method="post" target="content_frame">
+            <form name="f1" action="s1_user_check" method="post" target="working_holder">
                 <table>
                     <tr>
                         <td colspan="2">
@@ -66,7 +66,7 @@
         </div>
        
             <div style="background-image: url(./graphics/div_blue.png)" align="right">
-                <form name="f1" action="s1_user_check" method="post" target="content_frame">
+                <form name="f1" action="s1_user_check" method="post" target="working_holder">
                 <table>
                     <tr>
                         <td colspan="2">

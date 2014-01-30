@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,7 +31,7 @@
                                   {msg="";  }
 
     %>
-    <body>
+    <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <div align="center" style="background-image: url(./graphics/div_flat_back_pink.png);margin-left:30%;margin-right:30%  ">
             <form action="s1_login_check" method="post">
                 <table align="center">
@@ -44,7 +44,7 @@
                         </tr>
                         <tr>
                             <td>User Id</td>
-                            <td><input type="text" name="user_id" value="<%=(String)session.getAttribute("temp_id")%>" readonly="readonly" /></td>
+                            <td><input type="text" name="user_id" value="<%=(String)session.getAttribute("user_id")%>" readonly="readonly" /></td>
                             
                     </tr>
                     <tr>
@@ -55,7 +55,7 @@
                     <tr><td style="color: #3300ff" colspan="2"><%=msg%></td></tr>
                     <tr><td style="color: #00ffff" colspan="2">The account has been registered already.</td></tr>
                     <tr>
-                        <td><input type="button" value="Home" name="btn_home" onclick="window.location.href='./j1_home.jsp'"/></td>
+                        <td><input type="button" value="Home" name="btn_home" onclick="window.location.href=<%=(String)getServletContext().getInitParameter("startup_page")%>"/></td>
                         <td><input type="submit" value="GetIn" /></td>
                     </tr>
                 </table>

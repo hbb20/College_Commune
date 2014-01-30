@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,7 +29,7 @@
 if(msg==null)
                                   {msg="";  }
     %>
-    <body>
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         
                     <h1 align="center">Approved</h1> 
                 
@@ -39,7 +39,7 @@ if(msg==null)
         <div align="center">
             <table>
                 <tr>
-                   <td><input type="button" value="Home" name="btn_home" onclick="window.location.href='./j1_home.jsp'"/></td>
+                   <td><input type="button" value="Home" name="btn_home" onclick="window.location.href='<%=(String)getServletContext().getInitParameter("startup_page")%>'"/></td>
                     <td>
             <form name="f1" action="s1_next_signup" method="POST">
                 <input type="submit" value="Fill Details" name="btn1" />

@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
 
 <!DOCTYPE html>
 <html>
@@ -13,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Faculty SignUp</title>
     </head>
-    <body>
+    <body style="background-image:url('<%=(String)getServletContext().getInitParameter("background_image")%>'); background-repeat:no-repeat;background-size: cover">
         <h1>Faculty Sign Up </h1>
     </body>
 </html>

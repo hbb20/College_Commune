@@ -52,7 +52,7 @@ public class s2_log_out extends HttpServlet {
           
         }
         finally { 
-             RequestDispatcher rd=request.getRequestDispatcher("j1_home.jsp");
+             RequestDispatcher rd=request.getRequestDispatcher("<%=(String)%>");
             rd.forward(request, response);
             out.close();
            

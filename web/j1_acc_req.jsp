@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
+
 
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@
 
     %>
     
-    <body>
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <h1 align="center">New Account Request</h1>
         <div align="center">
             <form name="f1" action="s1_verify_new_acc" method="POST">
@@ -67,7 +67,7 @@
                                 </select></td>
                         </tr>
                         <tr>
-                            <td><input type="submit" value="Home" name="btn_home" onclick="widows.location.href='/j1_home.jsp'" /></td>
+                            <td><input type="submit" value="Home" name="btn_home" onclick="widows.location.href='<%=(String)getServletContext().getInitParameter("startup_page")%>'" /></td>
                             <td align="right"><input type="submit" value="Place Request" /></td>
                            
                         </tr>

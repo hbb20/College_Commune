@@ -8,7 +8,6 @@
 <%@page import="java.lang.annotation.Target"%>
 <%@page import="com.sun.org.apache.bcel.internal.generic.AALOAD"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
 <%@page import="c_c_db_package.*,java.sql.*" %>
 
 <!DOCTYPE html>
@@ -52,7 +51,7 @@
 
     %>
 
-    <body>
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <h1 align="centre">...<%=(String)session.getAttribute("live_dept")%>...Departmental Admin</h1>
         <input type="button" value="Log Out" name="log_out" style="margin-left: 90%" onclick="window.location.href='./s2_log_out'"/>
         <h3 style="color: green" align="center"><%=msg%></h3>

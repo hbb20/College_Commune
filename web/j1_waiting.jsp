@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,14 +27,14 @@
 
     %>
     
-    <body>
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <div>
         <h1 align="center">Still Waiting!!!</h1>
         <h2 style="color: greenyellow" align="center"><%=msg%></h2>
         <h3 align="center"> Your Account Request Has been placed...<br/>
             please Wait until DA response
         </h3>
-        <form action="j1_home.jsp" method="post">
+        <form action="<%=(String)getServletContext().getInitParameter("startup_page")%>" method="post">
             <input type="submit" value="Back To Home" name="Back" style="margin-left: 45%" />
         </form>
         </div>
