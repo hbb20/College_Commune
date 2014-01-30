@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>College Commune</title>
+        <title>College Commune Final Project</title>
     </head>
 
      <frameset rows="20%,80%" frameborder="0" framespacing="0">
