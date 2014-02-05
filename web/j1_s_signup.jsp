@@ -8,18 +8,78 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript">
+            function nameval()
+            {
+                var a = document.form.name.value;
+                if(f_name=="" && m_name=="" && l_name="")
+                {
+                    alert("Please Enter Your Name");
+                    document.form.name.focus();
+                    return false;
+                }
+                if(!isNaN(f_name=="" && m_name=="" && l_name=""))
+                {
+                alert("Please Enter Only Characters");
+                document.form.name.select();
+                return false;
+                }
+            }
+            function mobnum(text)  
+            {  
+                var self_cell = /^[0-9]+$/;  
+                if((self_cell.Length!==10) && text.value.match(self_cell))  
+                {  
+                    alert('you have return perfect mobile num');  
+                    document.form1.text1.focus();  
+                    return true;  
+                } 
+                else  
+                {     
+                    alert('Please enter only 10 digit mobile number');  
+                    document.form1.text1.focus();  
+                    return false;  
+                } 
+             function passwordval() 
+             {
+                     var password = $("#txtNewPassword").val();
+                     var confirmPassword = $("#txtConfirmPassword").val();
+
+               if (password !== confirmPassword)
+               {
+                    $("#divCheckPasswordMatch").html("Passwords do not match!");
+               }
+               else
+               {
+                    $("#divCheckPasswordMatch").html("Passwords match.");
+               } 
+             } 
+             function email_idval()
+             {
+                    var x=document.forms["myForm"]["email"].value;
+                    var atpos=x.indexOf("@");
+                    var dotpos=x.lastIndexOf(".");
+                    
+               if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+               {
+                    alert("Not a valid e-mail address");
+                    return false;
+               }
+             }
+        </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Student Sign Up</title>
     </head>
-    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+    <body onload='document.form1.text1.focus()'style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <h1 align="center">Student Sign up</h1>
-        <form action="s1_s_signup" method="post">
+        <form action="s1_s_signup" method="post" onsubmit="return email_idval()" onsubmit="retutn nameval()">
           <table align="center">
               <tr><td>  
             <div style="background-image: url(./graphics/div_flat_pink.png);margin-left:30%;margin-right:30%  ">
                 <table>
                     <tr><td colspan="3"><h3>Name</h3></td></tr>
                     <tr>
+                
                         <td>First Name</td>
                         <td>Middle Name</td>
                         <td>Last Name</td>
@@ -117,13 +177,14 @@
                     <td><input type="text" name="user_id" value="<%=(String)session.getAttribute("user_id")%>" readonly="readonly">
                     
                 </tr>
-                <tr><td>password</td><td><input type="password" name="pwd1" value="" /></td></tr>
-                <tr><td>RE-password</td><td><input type="password" name="pwd2" value="" /></td></tr>
-
+                <tr><td>password</td><td><input type="password" id="txtNewPassword" name="pwd1" value="" /></td></tr>
+                <tr><td>RE-password</td><td><input type="password" id="txtConfirmPassword" onchange="passwordval" name="pwd2" value="" /></td></tr>
+                <div class="registrationFormAlert" id="divCheckPasswordMatch">
+                </div>
                 <tr></tr>
                 <tr></tr>
                 <tr></tr>
-                <tr><td align="right"><input type="button" value="Back" name="btn_back" onclick="window.location.href='./j1_approved.jsp'"/></td>
+                <tr><td align="right"><input type="button" value="Back" name="btn_back" onclick="window.location.href='./j1_approved.jsp'" onclick="mobnum(document.form1.text1)"/></td>
                    <td><input type="submit" value="Submit" name="btn_submit" /></td></tr>
                 <tr><td><input type="hidden" name="hh" value="" /><td></tr>
             </table>
