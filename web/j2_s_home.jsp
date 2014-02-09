@@ -8,10 +8,10 @@
 <%@include file="main_header.jsp" %>
 <%@page import="c_c_db_package.*" %>
 <%
-   student s=new student();
-   student fetch=new student();
-    fetch=s.fetchStudent((String)session.getAttribute("live_user"));
-   
+    student s = new student();
+    student fetch = new student();
+    fetch = s.fetchStudent((String) session.getAttribute("live_user"));
+
 %>
 <!DOCTYPE html>
 <html>
@@ -21,10 +21,10 @@
     </head>
     <body>
         <h1 align="center">Student profile</h1>
-        <input type="button" value="Log Out" name="log_out" style="margin-left: 90%" onclick="window.location.href='./s2_log_out'"/>
+        <input type="button" value="Log Out" name="log_out" style="margin-left: 90%" onclick="window.location.href = './s2_log_out'"/>
         <div style="background-image: url(./graphics/div_flat_pink.png);margin-left:30%;margin-right:30%  ">
             <table border="0" align="center">
-              
+
                 <tbody>
                     <tr>
                         <td>User ID</td>
@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <td colspan="2"><h3>Educational</h3></td>
-                        
+
                     </tr>
                     <tr>
                         <td>Enrollment</td>
@@ -60,7 +60,7 @@
                     </tr>
                     <tr>
                         <td colspan="2"><h3>Personal</h3></td>
-                        
+
                     </tr>
                     <tr>
                         <td>Self Mobile</td>

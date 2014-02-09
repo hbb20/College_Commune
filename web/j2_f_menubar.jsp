@@ -18,9 +18,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><a href="Notice.jsp" target="contentHolder">Notice</a>
-                    </td></tr>
-                <tr><td><a href="f_test2.jsp" target="contentHolder">Profile</a>
+                <tr bgcolor="yellow" align="right"><td><div style="background-image: url(graphics/div_blue.png)" align="right"><a href="Notice.jsp" target="contentHolder"><img src="icon/221.png" width="50" height="50" alt="logo_left_head"/></a>
+                        </div></td></tr>
+                <tr bgcolor="red"><td><a href="f_test2.jsp" target="contentHolder">Profile</a>
                     </td></tr>
             </tbody>
         </table>

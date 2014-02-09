@@ -1,9 +1,12 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package a_general_package;
 
+import c_c_db_package.pending_req;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -11,18 +14,16 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author HBB20
+ * @author HARSH BHAKT
  */
-public class s2_log_out extends HttpServlet {
+public class s2_suspend_request extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP
-     * <code>GET</code> and
-     * <code>POST</code> methods.
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
      *
      * @param request servlet request
      * @param response servlet response
@@ -33,37 +34,35 @@ public class s2_log_out extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        String user_id=request.getParameter("user_id");
+        pending_req pr=new pending_req();
+        String msg="Some Error occured";
+        String next_page="j2_da_approve.jsp";
         try {
             /* TODO output your page here. You may use following sample code. */
-           HttpSession hs=request.getSession();
-           String user=(String)hs.getAttribute("live_user");
-             out.print("user is"+user);
-           hs.removeAttribute("live_dept");
-           hs.removeAttribute("live_user");
            
-           
-           user=(String)hs.getAttribute("live_user");
-           
-           out.print("user is"+user);
-           
+             //out.print(user_id);
+            boolean done=pr.set_suspend(user_id);
+            if(done)
+            {msg=user_id+" Request Has Been Suspended";
+             
+            }
         } 
-        catch(Exception e)
+        catch(Exception ex)
         {
+            out.println("error in suspending is "+ex);
+        }
+        finally {         
+            request.setAttribute("msg",msg);
+            RequestDispatcher rd=request.getRequestDispatcher(next_page);
+            rd.forward(request, response);
           
         }
-        finally { 
-             RequestDispatcher rd=request.getRequestDispatcher("j1_home1.jsp");
-            rd.forward(request, response);
-            out.close();
-           
-        }
-        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP
-     * <code>GET</code> method.
+     * Handles the HTTP <code>GET</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -77,8 +76,7 @@ public class s2_log_out extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP
-     * <code>POST</code> method.
+     * Handles the HTTP <code>POST</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -100,4 +98,5 @@ public class s2_log_out extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
 }

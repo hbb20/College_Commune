@@ -70,8 +70,12 @@
                           <td><%=f_name%></td>
                           <td><%=l_name%></td> 
                           <td><input type="submit" value="Approve Request" name="<%=rs.getString(1)%>" /></td>
+                          <td><input type="hidden" name="user_id" value="<%=id%>" /></form>
+                          <form action="s2_suspend_request">
+                              <td><input type="submit" value="Suspend Request" name="<%=rs.getString(1)%>" /></td>
                           <td><input type="hidden" name="user_id" value="<%=id%>" />
-                      </tr></table></form>
+                          </form>
+                      </tr></table>
                       <%}%>
             
         
