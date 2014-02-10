@@ -65,7 +65,7 @@ public class s2_da_req_suspended extends HttpServlet {
         String user_id=request.getParameter("user_id");
         pending_req pr=new pending_req();
         String msg="Some Error occured";
-        String next_page="j2_da_approve.jsp";
+        String next_page="j2_da_req_approve.jsp";
         try {
             /* TODO output your page here. You may use following sample code. */
            
