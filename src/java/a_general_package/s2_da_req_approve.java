@@ -1,6 +1,9 @@
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
+ *//*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package a_general_package;
 
@@ -17,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author HBB20
  */
-public class s2_approve_request extends HttpServlet {
+public class s2_da_req_approve extends HttpServlet {
 
     /**
      * Processes requests for both HTTP
@@ -36,7 +39,8 @@ public class s2_approve_request extends HttpServlet {
         String user_id=request.getParameter("user_id");
         pending_req pr=new pending_req();
         String msg="Some Error occured";
-        String next_page="j2_da_approve.jsp";
+        String next_page="j2_da_req_approve.jsp";
+        System.out.println("in approve seervlet");
         try {
             /* TODO output your page here. You may use following sample code. */
            

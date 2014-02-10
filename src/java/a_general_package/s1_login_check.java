@@ -65,7 +65,7 @@ public class s1_login_check extends HttpServlet {
                     }
                      else if(role.equalsIgnoreCase("da") )
                     {   hs.setAttribute("live_user",user_id);
-                        next_page="j2_da_approve.jsp";
+                        next_page="j2_da_req_approve.jsp";
                         hs.setAttribute("role","da");
                         hs.setAttribute("live_dept",dept);
                     }

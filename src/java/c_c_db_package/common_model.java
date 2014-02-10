@@ -50,16 +50,16 @@ public class common_model {
                 return state;
             }
             
-//             table="req_suspend";
-//            query="select * from "+table+" where user_id='"+user_id+"'";
-//            st.execute(query);
-//            rs=st.executeQuery(query);
-//            if(rs.next())
-//            {
-//                state="suspended";
-//                return state;
-//            }
-//            
+             table="req_suspended";
+            query="select * from "+table+" where user_id='"+user_id+"'";
+            st.execute(query);
+            rs=st.executeQuery(query);
+            if(rs.next())
+            {
+                state="suspended";
+                return state;
+            }
+            
             System.out.print("cm_login_ck1");
             
              table="req_waiting";

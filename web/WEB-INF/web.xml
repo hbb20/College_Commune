@@ -30,16 +30,20 @@
         <servlet-class>a_general_package.s1_s_signup</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>s2_approve_request</servlet-name>
-        <servlet-class>a_general_package.s2_approve_request</servlet-class>
+        <servlet-name>s2_da_req_approve</servlet-name>
+        <servlet-class>a_general_package.s2_da_req_approve</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>s2_log_out</servlet-name>
         <servlet-class>a_general_package.s2_log_out</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>s2_suspend_request</servlet-name>
-        <servlet-class>a_general_package.s2_suspend_request</servlet-class>
+        <servlet-name>s2_da_req_suspended</servlet-name>
+        <servlet-class>a_general_package.s2_da_req_suspended</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>s2_da_req_restore</servlet-name>
+        <servlet-class>a_general_package.s2_da_req_restore</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>s1_user_check</servlet-name>
@@ -62,16 +66,20 @@
         <url-pattern>/s1_s_signup</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>s2_approve_request</servlet-name>
-        <url-pattern>/s2_approve_request</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>s2_log_out</servlet-name>
         <url-pattern>/s2_log_out</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>s2_suspend_request</servlet-name>
-        <url-pattern>/s2_suspend_request</url-pattern>
+        <servlet-name>s2_da_req_approve</servlet-name>
+        <url-pattern>/s2_da_req_approve</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s2_da_req_restore</servlet-name>
+        <url-pattern>/s2_da_req_restore</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s2_da_req_suspended</servlet-name>
+        <url-pattern>/s2_da_req_suspended</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

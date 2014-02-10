@@ -4,6 +4,10 @@
  */
 package model_check;
 import c_c_db_package.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author HBB20
@@ -25,7 +29,23 @@ public class pending_request_model_check {
         
         
         //earase waiting request
-        pr.eraseWaitingRequest("as");
+      //  pr.eraseWaitingRequest("as");
+        
+      /**  //Get suspended checking
+        ResultSet rs=pr.getSuspended("IT");
+        try {
+            while(rs.next())
+            {
+                System.out.println(rs.getString(2));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(pending_request_model_check.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        **/
+        
+        
+        
+        
         
     }
 }

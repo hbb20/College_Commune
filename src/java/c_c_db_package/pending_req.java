@@ -19,13 +19,31 @@ public class pending_req {
 
     c_c_db ccd = null;
     Connection conn = null;
+    //String enroll
 
     public pending_req() {
         ccd = new c_c_db();
         conn = ccd.getDB();
 
     }
-
+public ResultSet getSuspended(String dept)
+{
+     ResultSet rs=null;   
+    try {
+           
+            Connection conn=ccd.getDB();
+            Statement st=conn.createStatement();
+            String query="select * from req_suspended where dept='"+dept+"'";
+            // String query="select * from req_waiting where dept='IT'";
+            rs=st.executeQuery(query);
+        } catch (SQLException ex) {
+           System.out.print("Error while fatching suspended student of "+dept);
+        }
+    return rs;
+}   
+        
+        
+        
     public boolean set_suspend(String user_id) {
         String f_name;
         f_name = "";
@@ -65,6 +83,49 @@ public class pending_req {
         return done;
     }
 
+    
+    public boolean restore_suspend(String user_id) {
+        String f_name;
+        f_name = "";
+        String l_name = "";
+        String dept = "";
+        
+        pending_req pr = new pending_req();
+        boolean done = false;
+        try {
+            ResultSet rs = null;
+
+            String query = "select * from req_suspended where user_id='" + user_id + "'";
+            Statement st = conn.createStatement();
+            st.execute(query);
+            rs = st.executeQuery(query);
+            if (rs.next()) {
+                f_name = rs.getString("f_name");
+                l_name = rs.getString("l_name");
+                dept = rs.getString("dept");
+            }
+        } catch (Exception ex) {
+            System.out.print("exeption at selecting for restoring at suspend   " + ex);
+            //return false;
+        }
+
+        String query = "insert into req_waiting values('" + user_id + "','" + f_name + "','" + l_name + "','" + dept + "','no','s')";
+        try {
+            Statement st = conn.createStatement();
+            // st.execute(query);
+            int up = st.executeUpdate(query);
+            done = true;
+        } catch (SQLException ex) {
+            System.out.print("pending request_restore__execption_in waiting table " + ex);
+          //  return false;
+        }
+
+        pr.eraseSuspendedRequest(user_id);
+       // return done;
+        return done;
+    }
+
+    
     public int set_new_pr(String user_id, String f_name, String l_name, String branch, String rl) {
         boolean b = false;
         int up = 0;
@@ -101,6 +162,18 @@ public class pending_req {
 
     public void eraseWaitingRequest(String user_id) {
         String query = "delete from req_waiting where user_id='" + user_id + "'";
+        try {
+
+            Statement st = conn.createStatement();
+            st.executeUpdate(query);
+        } catch (SQLException ex) {
+            Logger.getLogger(pending_req.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+    
+    public void eraseSuspendedRequest(String user_id) {
+        String query = "delete from req_suspended where user_id='" + user_id + "'";
         try {
 
             Statement st = conn.createStatement();
