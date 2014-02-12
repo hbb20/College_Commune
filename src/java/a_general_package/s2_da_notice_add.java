@@ -1,28 +1,27 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package a_general_package;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author HBB20
+ * @author HARSH BHAKT
  */
-public class s2_log_out extends HttpServlet {
+public class s2_da_notice_add extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP
-     * <code>GET</code> and
-     * <code>POST</code> methods.
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
      *
      * @param request servlet request
      * @param response servlet response
@@ -35,35 +34,23 @@ public class s2_log_out extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             /* TODO output your page here. You may use following sample code. */
-           HttpSession hs=request.getSession();
-           String user=(String)hs.getAttribute("live_user");
-             out.print("user is"+user);
-           hs.removeAttribute("live_dept");
-           hs.removeAttribute("live_user");
-           
-           
-           user=(String)hs.getAttribute("live_user");
-           
-           out.print("user is"+user);
-           
-        } 
-        catch(Exception e)
-        {
-          
-        }
-        finally { 
-             RequestDispatcher rd=request.getRequestDispatcher("jM_logout.jsp");
-            rd.forward(request, response);
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet s2_da_notice_add</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet s2_da_notice_add at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        } finally {
             out.close();
-           
         }
-        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP
-     * <code>GET</code> method.
+     * Handles the HTTP <code>GET</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -77,8 +64,7 @@ public class s2_log_out extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP
-     * <code>POST</code> method.
+     * Handles the HTTP <code>POST</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -100,4 +86,5 @@ public class s2_log_out extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
 }

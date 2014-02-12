@@ -118,7 +118,7 @@ public class notice_model {
     }
 
     public notice_model(String title, String body, String sender, int urgency) {
-        conn = (Connection) ccd.getDB();
+         conn = (Connection) ccd.getDB();
         this.title = title;
         this.body = body;
         this.sender = sender;
