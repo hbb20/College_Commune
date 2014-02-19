@@ -9,6 +9,16 @@
         <param-name>startup_page</param-name>
         <param-value>./jM1_startup.jsp</param-value>
     </context-param>
+    <filter>
+        <description>redirects to home pageif the user is not signed in as DA</description>
+        <filter-name>da_logged_in</filter-name>
+        <filter-class>a_general_package.s2_da_req_approve</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>da_logged_in</filter-name>
+        <servlet-name>s2_da_req_approve</servlet-name>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
     <servlet>
         <servlet-name>s1_user_check</servlet-name>
         <servlet-class>a_general_package.s1_user_check</servlet-class>
@@ -45,6 +55,10 @@
         <servlet-name>s2_da_req_restore</servlet-name>
         <servlet-class>a_general_package.s2_da_req_restore</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>s2_da_notice_add</servlet-name>
+        <servlet-class>a_general_package.s2_da_notice_add</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>s1_user_check</servlet-name>
         <url-pattern>/s1_user_check</url-pattern>
@@ -80,6 +94,10 @@
     <servlet-mapping>
         <servlet-name>s2_da_req_suspended</servlet-name>
         <url-pattern>/s2_da_req_suspended</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s2_da_notice_add</servlet-name>
+        <url-pattern>/s2_da_notice_add</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

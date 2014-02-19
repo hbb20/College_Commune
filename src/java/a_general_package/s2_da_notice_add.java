@@ -12,6 +12,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import c_c_db_package.notice_model;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -32,17 +34,25 @@ public class s2_da_notice_add extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        HttpSession hs=request.getSession();
         try {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet s2_da_notice_add</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet s2_da_notice_add at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+          String title,body,urgency,dept,level[],sender;
+          int num_class,urg;
+          title=request.getParameter("title");
+          body=request.getParameter("body");
+          urgency=request.getParameter("urgency");
+          level=request.getParameterValues("levels");
+          num_class=level.length;
+          urg=Integer.parseInt(urgency);
+          dept=(String)hs.getAttribute("live_dept");
+          sender=(String)hs.getAttribute("live_user");
+          out.printf("Title :"+title+" Body:"+body+" Urgency:"+urgency+"num_of_classes"+num_class);
+          for(int i=0;i<num_class;i++)
+              out.println(level[i]);
+          notice_model nm=new notice_model(title, body, sender, urg);
+          boolean stored=nm.storeNotice();
+          out.println("stored="+stored);
         } finally {
             out.close();
         }
