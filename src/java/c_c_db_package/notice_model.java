@@ -210,7 +210,7 @@ public class notice_model {
 
     }
 
-    public static notice_model fetchNoticebyClass(String branch, int level) {
+    public static ResultSet fetchNoticebyClass(String branch, int level) {
         Connection conn = (Connection) new c_c_db().getDB();
         notice_model n = new notice_model();
         ResultSet rs = null;
@@ -223,17 +223,17 @@ public class notice_model {
 
         } catch (SQLException ex) {
             System.out.print("notice_fetchbyclass_execption " + ex);
-            return n;
+           
         }
-        try {
+     /*   try {
             while (rs.next()) {
                 System.out.println("" + rs.getInt(1) + rs.getString(2) + rs.getString(3) + rs.getString(4) + rs.getInt(5) + rs.getDate(6));
             }
 
         } catch (SQLException ex) {
             System.out.println(ex);
-        }
-        return n;
+        }*/
+        return rs;
 
     }
 

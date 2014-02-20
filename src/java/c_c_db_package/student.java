@@ -61,7 +61,7 @@ public class student {
     {
         boolean rtrn=false;
         Integer count=0;
-     String query="insert into student values('"+user_id+"','"+stud.f_name+"','"+stud.m_name+"','"+stud.l_name+"',"+stud.level+",'"+stud.self_cell+"','"+stud.parent_cell+"','"+stud.local_add+"','"+stud.per_add+"','no avtar',"+stud.batch_year+",'"+stud.email+"','"+stud.dept+"','"+stud.fa+"')";
+     String query="insert into student values('"+stud.user_id+"','"+stud.f_name+"','"+stud.m_name+"','"+stud.l_name+"',"+stud.level+",'"+stud.self_cell+"','"+stud.parent_cell+"','"+stud.local_add+"','"+stud.per_add+"','no avtar',"+stud.batch_year+",'"+stud.email+"','"+stud.dept+"','"+stud.fa+"')";
      //  String query="insert into student values('t_id2_ok','t_fname','t_mname','t_lname',2,'t_scell','t_pcell','t_ladd','t_padd','no avtar',3,'try_email','try_dept','UDA')";
         try {
            Statement St=conn.createStatement();
@@ -98,7 +98,7 @@ public class student {
             }
             else
             {
-                stud=new student("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", user_id, 0, 0, "0000", "0000");
+               // stud=new student("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", user_id, 0, 0, "0000", "0000");
             }
         } catch (SQLException ex) {
             Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, ex);
