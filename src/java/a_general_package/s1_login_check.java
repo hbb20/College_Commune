@@ -69,10 +69,17 @@ public class s1_login_check extends HttpServlet {
                         hs.setAttribute("role","da");
                         hs.setAttribute("live_dept",dept);
                     }
+                     
+                     else if(role.equalsIgnoreCase("fw") )
+                    {   hs.setAttribute("live_user",user_id);
+                        next_page="j2_f_signup.jsp";
+                        hs.setAttribute("role","faculty");
+                        hs.setAttribute("live_dept",dept);
+                    }
                     else 
                     {   hs.setAttribute("live_user",user_id);
-                        next_page="j1_home.jsp";
-                        request.setAttribute("msg",role+" try Again");
+                        next_page="jM1_startup.jsp";
+                        request.setAttribute("msg",user_id+" try Again");
                     }
             }
             else

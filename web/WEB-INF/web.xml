@@ -59,6 +59,10 @@
         <servlet-name>s2_da_notice_add</servlet-name>
         <servlet-class>a_general_package.s2_da_notice_add</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>s2_da_grandNewFaculty</servlet-name>
+        <servlet-class>a_general_package.s2_da_grandNewFaculty</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>s1_user_check</servlet-name>
         <url-pattern>/s1_user_check</url-pattern>
@@ -98,6 +102,10 @@
     <servlet-mapping>
         <servlet-name>s2_da_notice_add</servlet-name>
         <url-pattern>/s2_da_notice_add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s2_da_grandNewFaculty</servlet-name>
+        <url-pattern>/s2_da_grandNewFaculty</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

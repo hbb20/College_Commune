@@ -13,7 +13,7 @@
     </head>
     <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-size: cover">
         <h1>You have logged out Successfully</h1>
-        <form name="a1" action="j1_home1.jsp">
+        <form name="a1" action="jM1_startup.jsp">
             <input type="submit" value="Get Back to Home" name="f1" />
         </form>
     </body>

@@ -9,6 +9,9 @@ import c_c_db_package.c_c_db;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -39,7 +42,26 @@ public class faculty_model {
         
     }
     
-    
+    public boolean grandNewFaculty()
+    {
+        boolean rtrn=false;
+        String query;
+        Integer count=0;
+        try {
+            Statement st=conn.createStatement();
+            query="insert into users values('"+user_id+"','"+user_id+"','fw','"+position+"','"+dept+"')";
+            count=st.executeUpdate(query);
+            if(count!=0)
+            {
+                rtrn=true;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(user_model.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        finally{
+            return rtrn;
+        }
+    }
     public ResultSet getDeptFaculty(String depatment)
     {
          com.mysql.jdbc.Connection conn = (com.mysql.jdbc.Connection) new c_c_db().getDB();
@@ -47,7 +69,7 @@ public class faculty_model {
         ResultSet rs = null;
         //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
         String query;
-        query = "SELECT * from faculty where dept='"+depatment;
+        query = "SELECT * from faculty where dept='"+depatment+"'";
         try {
             java.sql.Statement st = conn.createStatement();
             // st.execute(query);
