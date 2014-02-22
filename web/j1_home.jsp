@@ -11,9 +11,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home Page</title>
-        <script>window.onload=function(){
+        <script>window.onload=function()
+            {
              document.getElementById("focus").focus();
-        };</script>
+            };
+        </script>
          </head>
   
     
@@ -31,13 +33,13 @@
     }
          if(msg==null)
                                   {msg="";  }
-
+ 
     %>
     
     <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
        
         
-     
+     +
     
       <div style="background-image: url(./graphics/div_blue.png)" align="right">
             <form name="f1" action="s1_user_check" method="post" target="working_holder">
