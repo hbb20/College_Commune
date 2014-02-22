@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author HARSH BHAKT
  */
-public class s2_da_grandNewFaculty extends HttpServlet {
+public class s2_da_grantNewFaculty extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -42,7 +42,7 @@ public class s2_da_grandNewFaculty extends HttpServlet {
         
         try {
             /* TODO output your page here. You may use following sample code. */
-            stored=fm.grandNewFaculty();
+            stored=fm.grantNewFaculty();
             System.out.println("Granted New faculty "+stored);
             request.setAttribute("msg","Faculty "+user_id+" has been Granted");
         } 

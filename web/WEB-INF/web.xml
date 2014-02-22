@@ -61,7 +61,7 @@
     </servlet>
     <servlet>
         <servlet-name>s2_da_grandNewFaculty</servlet-name>
-        <servlet-class>a_general_package.s2_da_grandNewFaculty</servlet-class>
+        <servlet-class>a_general_package.s2_da_grantNewFaculty</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>s2_f_signup</servlet-name>
