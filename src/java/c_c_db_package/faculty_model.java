@@ -6,6 +6,7 @@
 
 package c_c_db_package;
 import c_c_db_package.c_c_db;
+import com.sun.xml.rpc.processor.modeler.j2ee.xml.string;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -42,7 +43,7 @@ public class faculty_model {
         
     }
     
-    public boolean grandNewFaculty()
+    public boolean grantNewFaculty()
     {
         boolean rtrn=false;
         String query;
@@ -70,18 +71,32 @@ public class faculty_model {
         //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
         String query;
         query = "SELECT * from faculty where dept='"+depatment+"'";
-        try {
+        try 
+        {
             java.sql.Statement st = conn.createStatement();
             // st.execute(query);
             rs = st.executeQuery(query);
 
-        } catch (SQLException ex) {
+        }
+        catch (SQLException ex) 
+        {
             System.out.println("faculty_byDept_execption " + ex);
            
         }
 
         return rs;
-
+    }
+    
+    public String make_short(String fname,String mname,String lname)
+    {
+        String ff=String.valueOf(fname.charAt(0));
+            ff=ff.toUpperCase();
+        String mf=String.valueOf(mname.charAt(0));
+            mf=mf.toUpperCase();
+        String lf=String.valueOf(lname.charAt(0));
+            lf=lf.toUpperCase();
+        String short_nm=ff+mf+lf;
+        return short_nm;
         
     }
     

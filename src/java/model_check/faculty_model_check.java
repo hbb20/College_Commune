@@ -25,7 +25,7 @@ public class faculty_model_check {
      
      //fatchbydept
 //     try {
-//         faculty_model fm=new faculty_model();
+//         faculty_model fm1=new faculty_model();
 //         
 //         ResultSet rs;
 //         rs = fm.getDeptFaculty("IT");
@@ -39,11 +39,15 @@ public class faculty_model_check {
  
  
  
+ //faculty grant check
+    // faculty_model fm2=new faculty_model("userid", null, null, null, null, "prof", null, null, null, null,"IT", null);
+      //fm.grantNewFaculty();
  
-      faculty_model fm=new faculty_model("userid", null, null, null, null, "prof", null, null, null, null,"IT", null);
-      fm.grandNewFaculty();
- 
- 
+ //make short name of faculty
+     faculty_model fm3=new faculty_model();
+     System.out.println("in");
+     String shrt=fm3.make_short("urmi", "deven","Agravat");
+     System.out.println(shrt);
  
  }
  
