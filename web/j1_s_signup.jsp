@@ -9,19 +9,19 @@
 <html>
     <head>
         <script type="text/javascript">
-            function nameval()
+            function nameval(value1)
             {
-                var a = document.form.name.value;
-                if(f_name=="" && m_name=="" && l_name="")
+                //value1= document.form.name.value;
+                if(value1=="")
                 {
                     alert("Please Enter Your Name");
-                    document.form.name.focus();
+                    document.f.f_name.focus();
                     return false;
                 }
-                if(!isNaN(f_name=="" && m_name=="" && l_name=""))
+                if(!isNaN(f_name=="")
                 {
                 alert("Please Enter Only Characters");
-                document.form.name.select();
+                document.f.f_name.select();
                 return false;
                 }
             }
@@ -70,9 +70,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Student Sign Up</title>
     </head>
-    <body onload='document.form1.text1.focus()'style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+    <body onload='document.f.f_name.focus()' style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <h1 align="center">Student Sign up</h1>
-        <form action="s1_s_signup" method="post" onsubmit="return email_idval()" onsubmit="retutn nameval()">
+        <form name="f" action="s1_s_signup" method="post" onsubmit="return email_idval()">
           <table align="center">
               <tr><td>  
             <div style="background-image: url(./graphics/div_flat_pink.png);margin-left:30%;margin-right:30%  ">
@@ -85,7 +85,7 @@
                         <td>Last Name</td>
                    </tr>
                    <tr>
-                       <td align="right"><input type="text" name="f_name" value="" size="12"  /></td>
+                       <td align="right"><input type="text" name="f_name" value="" size="12" onblur="nameval(this.value);"  /></td>
                        <td><input type="text" name="m_name" value="" size="12" /></td>
                        <td><input type="text" name="l_name" value="" size="12" /></td>
                    
