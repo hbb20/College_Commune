@@ -13,6 +13,11 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+<<<<<<< HEAD
         line by vaisu
+=======
+        
+        line by harsh
+>>>>>>> 1d637861d566e1d6f30b9b829849b430990c7a2e
     </body>
 </html>
