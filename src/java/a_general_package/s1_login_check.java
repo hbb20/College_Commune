@@ -54,19 +54,19 @@ public class s1_login_check extends HttpServlet {
                     {
                         next_page="j2_s_home.jsp";
                         hs.setAttribute("live_user",user_id);
-                        hs.setAttribute("role","student");
+                        hs.setAttribute("llive_role","student");
                         hs.setAttribute("live_dept",dept);
                     }
                     else if(role.equals("faculty") )
                     {   hs.setAttribute("live_user",user_id);
                         next_page="j2_faculty.jsp";
-                        hs.setAttribute("role","faculty");
+                        hs.setAttribute("live_role","faculty");
                         hs.setAttribute("live_dept",dept);
                     }
                      else if(role.equalsIgnoreCase("da") )
                     {   hs.setAttribute("live_user",user_id);
                         next_page="j2_da_req_approve.jsp";
-                        hs.setAttribute("role","da");
+                        hs.setAttribute("live_role","da");
                         hs.setAttribute("live_dept",dept);
                     }
                      
@@ -75,9 +75,11 @@ public class s1_login_check extends HttpServlet {
                         next_page="j2_f_signup.jsp";
                         hs.setAttribute("role","faculty");
                         hs.setAttribute("live_dept",dept);
+                        String autho=um.getAuthority(user_id);
+                        hs.setAttribute("live_authority", autho);
                     }
                     else 
-                    {   hs.setAttribute("live_user",user_id);
+                    {   
                         next_page="jM1_startup.jsp";
                         request.setAttribute("msg",user_id+" try Again");
                     }
