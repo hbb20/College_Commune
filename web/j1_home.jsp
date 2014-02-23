@@ -34,7 +34,7 @@
 
     %>
     
-    <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
+    <body width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
        
         
      
@@ -90,7 +90,7 @@
             </form>
         </div> 
                
-            </tr>
-        </table>
+           
+   
     </body>
 </html>
