@@ -11,19 +11,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-       <%
-    String style_btn="width: 170px;height: 60px; background-image: url(./graphics/sub_btn.png); background-position-x: 0";
- %>   
-<body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+  
+ <body  style="background-color:#999999;background-size: cover">
         <table border="0" style="width:100%">
             <tbody>
                 <tr>
                     <td>&nbsp;&nbsp;</td>
-                    <td><form name="reset_password_form" action="j2_da_admin_resetPassword.jsp" target="content_holder">
-                            <input type="submit"  style="<%=style_btn%>" value="Reset Password" name="reset_pwd_submit" /></form></td>
+                    <td><a href="j2_da_admin_resetPassword.jsp" target="content_holder"><img src="./graphics/sub_btn_resetpwd.png"></a></td>
                
                 </tr>
             </tbody>
         </table>
-    
+ </body>
 </html>

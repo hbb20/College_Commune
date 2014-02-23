@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
  
-      <frameset rows="20%,80%" frameborder="0" framespacing="10">
+      <frameset rows="15%,*" frameborder="0" framespacing="10">
        
         <frame src="j2_da_admin_abar.jsp" name="nav_holder" >
             <frame src="j2_da_admin_resetPassword.jsp" name="content_holder">
