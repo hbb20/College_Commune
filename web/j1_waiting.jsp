@@ -34,7 +34,7 @@
         <h3 align="center"> Your Account Request Has been placed...<br/>
             please Wait until DA response
         </h3>
-        <form action="<%=(String)getServletContext().getInitParameter("startup_page")%>" method="post">
+        <form action="<%=(String)getServletContext().getInitParameter("startup_page")%>" target="_top" method="post">
             <input type="submit" value="Back To Home" name="Back" style="margin-left: 45%" />
         </form>
         </div>

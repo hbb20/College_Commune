@@ -12,12 +12,12 @@
         <title>JSP Page</title>
     </head>
    
-         <frameset rows="10%,*" frameborder="0" framespacing="0">
+ <frameset rows="15%,*" frameborder="0" framespacing="10">
        
-        <frame src="j2_f_noticebar.jsp" name="n_menu_frame" >
-            <frame src="j2_f_all_notice.jsp" name="n_working_holder">
-            </frameset>       
-            <noframes>    <body>  Frames not supported by browser </body> </noframes>
+        <frame src="j2_f_notice_abar.jsp" name="nav_holder" >
+            <frame src="j2_f_notice_viewAll.jsp" name="content_holder">
+            
+            <noframes>    <body>  demo_to_vaisu_modified </body> </noframes>
     </frameset>
     
 </html>
