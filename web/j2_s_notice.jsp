@@ -12,10 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Notice List</h1>
-        <%
-            
-        %>
+     <body>
+        <%@include file="j_under_construction.jsp" %> 
     </body>
 </html>
