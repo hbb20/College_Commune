@@ -17,7 +17,7 @@
         <frame src="j1_head_all.jsp" name="header_frame">
             <frame src="j1_home1.jsp" name="working_holder">
             </frameset>       
-            <noframes>    <body>  hellow </body> </noframes>
+            <noframes>    <body>  demo_to_vaisu_modified </body> </noframes>
     </frameset>
 
 </html>
