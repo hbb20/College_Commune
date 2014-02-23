@@ -54,7 +54,7 @@ public class s1_login_check extends HttpServlet {
                     {
                         next_page="j2_s_home.jsp";
                         hs.setAttribute("live_user",user_id);
-                        hs.setAttribute("live_role","student");
+                        hs.setAttribute("llive_role","student");
                         hs.setAttribute("live_dept",dept);
                     }
                     else if(role.equals("faculty") )
