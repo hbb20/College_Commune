@@ -11,25 +11,28 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
     <%
-    String role="";
+    String role=" ",student="student";
     try
     {
         role=(String)session.getAttribute("live_role");
     }
     catch(Exception e)
     {
-        role="";
+        role=" ";
     }
-    if(role.equals("student"))
+    finally
+    {
+    //if(role.equals(student))
+       if(role=="student")
     {
         
     }
     else
     {
-        RequestDispatcher rd=request.getRequestDispatcher("jM1_startup");
+        RequestDispatcher rd=request.getRequestDispatcher("jM1_startup.jsp");
         rd.forward(request, response);
             }
- 
+    }
     %>
     </head>
     <body>

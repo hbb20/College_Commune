@@ -52,20 +52,20 @@ public class s1_login_check extends HttpServlet {
             {  hs.setAttribute("user_id", user_id);
                     if(role.equals("student") )
                     {
-                        next_page="j2_s_home.jsp";
+                        next_page="j2_s.jsp";
                         hs.setAttribute("live_user",user_id);
-                        hs.setAttribute("llive_role","student");
+                        hs.setAttribute("live_role","student");
                         hs.setAttribute("live_dept",dept);
                     }
                     else if(role.equals("faculty") )
                     {   hs.setAttribute("live_user",user_id);
-                        next_page="j2_faculty.jsp";
+                        next_page="j2_f.jsp";
                         hs.setAttribute("live_role","faculty");
                         hs.setAttribute("live_dept",dept);
                     }
                      else if(role.equalsIgnoreCase("da") )
                     {   hs.setAttribute("live_user",user_id);
-                        next_page="j2_da_req_approve.jsp";
+                        next_page="j2_da.jsp";
                         hs.setAttribute("live_role","da");
                         hs.setAttribute("live_dept",dept);
                     }
