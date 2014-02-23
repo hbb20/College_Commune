@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import c_c_db_package.notice_model;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -52,8 +53,18 @@ public class s2_da_notice_add extends HttpServlet {
               out.println(level[i]);
           notice_model nm=new notice_model(title, body, sender, urg);
           boolean stored=nm.storeNotice();
+          if(stored)
+          {
+              request.setAttribute("msg","Notice has been placed successfully");
+          }
+          else
+          {
+              request.setAttribute("msg","Sorry! Notice Could not be Placed");
+          }
           out.println("stored="+stored);
         } finally {
+            RequestDispatcher rd=request.getRequestDispatcher((String)request.getRequestURI());
+            rd.forward(request, response);
             out.close();
         }
     }

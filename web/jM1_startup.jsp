@@ -14,9 +14,9 @@
 
      <frameset rows="20%,80%" frameborder="0" framespacing="0">
        
-        <frame src="j1_head_all.jsp" name="header_frame">
-            <frame src="j1_home1.jsp" name="working_holder">
-            </frameset>       
+        <frame src="j1_head_all.jsp" name="header_frame" >
+            <frame src="j1_home.jsp" name="working_holder">
+            
             <noframes>    <body>  demo_to_vaisu_modified </body> </noframes>
     </frameset>
 

@@ -1,96 +1,21 @@
 <%-- 
-    Document   : home
-    Created on : 8 Dec, 2013, 1:11:26 PM
-    Author     : HBB20
+    Document   : j1_home1
+    Created on : 30 Jan, 2014, 10:41:37 AM
+    Author     : HARSH BHAKT
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home Page</title>
-        <script>window.onload=function(){
-             document.getElementById("focus").focus();
-        };</script>
-         </head>
-  
-    
-    <%
-    String msg="";
-    try{
-    msg=(String)request.getAttribute("msg");
-       }
-    catch(Exception e)
-                       {
-        msg="";
-    }
-     finally{
-        request.removeAttribute("msg");
-    }
-         if(msg==null)
-                                  {msg="";  }
+        <title></title>
+    </head>
+     <frameset cols="75%,*" frameborder="0" framespacing="0">    
+            <frame src="j1_home_info.jsp" name="infoHolder">
+            <frame src="j1_home_userDetail.jsp" name="boxHolder">
+            </frameset>       
+            <noframes>    <body> </body> </noframes>
+    </frameset>
 
-    %>
-    
-    <body width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
-       
-        
-     
-    
-      <div style="background-image: url(./graphics/div_blue.png)" align="right">
-            <form name="f1" action="s1_user_check" method="post" target="working_holder">
-                <table>
-                    <tr>
-                        <td colspan="2">
-                            <h2 align="right">Access Account</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            User ID
-                        </td>
-                        <td>
-                            <input type="text" id="focus" name="user_id" value="" />
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="right">
-                            <input type="submit" value="Check" />
-                        </td>
-                    </tr>
-                </table>              
-            </form>
-        </div>
-       
-            <div style="background-image: url(./graphics/div_blue.png)" align="right">
-                <form name="f1" action="s1_user_check" method="post" target="working_holder">
-                <table>
-                    <tr>
-                        <td colspan="2">
-                            <h3 align="right">New Account?</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Enter Enrollment
-                        </td>
-                        <td>
-                            <input type="text" name="user_id" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="right"><font style="font-style: italic;color: red"><%=msg%></font>
-                            <input type="submit" value="Apply for account" />
-                        </td>
-                    </tr>
-                </table>                               
-            </form>
-        </div> 
-               
-           
-   
-    </body>
 </html>
