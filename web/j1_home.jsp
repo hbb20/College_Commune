@@ -36,10 +36,10 @@
  
     %>
     
-    <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
+    <body width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;">
        
         
-     +
+     
     
       <div style="background-image: url(./graphics/div_blue.png)" align="right">
             <form name="f1" action="s1_user_check" method="post" target="working_holder">
@@ -92,7 +92,7 @@
             </form>
         </div> 
                
-            </tr>
-        </table>
+           
+   
     </body>
 </html>
