@@ -6,7 +6,6 @@
 
 package c_c_db_package;
 import c_c_db_package.c_c_db;
-import com.sun.xml.rpc.processor.modeler.j2ee.xml.string;
 import com.mysql.jdbc.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
