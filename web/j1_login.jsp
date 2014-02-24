@@ -31,7 +31,7 @@
                                   {msg="";  }
 
     %>
-    <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+    <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);background-size: cover">
         <div align="center" style="background-image: url(./graphics/div_flat_back_pink.png);margin-left:30%;margin-right:30%  ">
             <form action="s1_login_check" method="post">
                 <table align="center">

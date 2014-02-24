@@ -70,7 +70,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Student Sign Up</title>
     </head>
-    <body onload='document.f.f_name.focus()' style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+    <body onload='document.f.f_name.focus()' style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);background-size: cover">
         <h1 align="center">Student Sign up</h1>
         <form name="f" action="s1_s_signup" method="post" onsubmit="return email_idval()">
           <table align="center">

@@ -6,14 +6,15 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%
-    String style_new_btn="width: 200px;height: 30px; background-image: url(./graphics/main_btn.png); background-position-x: 0";
- %>   
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
+    <%
+    String style_new_btn="width: 200px;height: 30px; background-image: url(./graphics/main_btn.png); background-position-x: 0";
+ %>   
     <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: inherit">
         <table border="0" style="height: 100%" align="right">
             <tbody>

@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Access Denied</title>
     </head>
-    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);background-size: cover">
         <div style="align:center">
             <h1 align="center">
                 Sorry!

@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
     </head>
-    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-size: cover">
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
     <!--  <div align="center" style="background-image:url(./graphics/apple_header2.png); background-repeat:no-repeat; background-position: center; back">-->
            <div align="center">
         

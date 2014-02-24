@@ -14,9 +14,10 @@
         <title>Faculty Home</title>
     </head>
     <body>
-    <frameset cols="20%,*">
-        <frame src="f_menubar.html"></frame>
-        <frame src="f_test1.html" name="contentHolder"></frame>
+   <frameset cols="20%,*" frameborder="0" framespacing="0">    
+            <frame src="j2_f_abar.jsp" name="userNavFrame">
+            <frame src="j2_f_notice.jsp" name="workingFrame">
+            <noframes>    <body> </body> </noframes>
     </frameset>
     </body>
 </html>

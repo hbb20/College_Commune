@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="main_header.jsp" %>
 
 
 <!DOCTYPE html>
@@ -14,7 +13,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Student home</title>
     </head>
-        <body>
-        <%@include file="j_under_construction.jsp" %> 
-    </body>
+      <frameset cols="20%,*" frameborder="0" framespacing="0">    
+            <frame src="j2_s_abar.jsp" name="userNavFrame">
+            <frame src="j2_s_notice.jsp" name="workingFrame">
+            <noframes>    <body> </body> </noframes>
+    </frameset>
 </html>
