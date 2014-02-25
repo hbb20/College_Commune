@@ -27,11 +27,14 @@
                                   {msg="";  }
 
     %>
-    <body>
-        <h3><%=msg%></h3>
+    <body height="100%" width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
+        <h1 align="center"><%=(String) session.getAttribute("live_dept")%> New Faculty user</h1>
+        <h4><%=msg%></h4>
+        <div align="center" style="background-image: url(./graphics/div_flat_back_pink.png);margin-left:30%;margin-right:30%;background-size:cover;  ">
     <form name="f1" action="s2_da_grandNewFaculty" method="POST">
         <table border="0">
             <tbody>
+                <tr>&nbsp;</tr>
                 <tr>
                     <td>User ID</td>
                     <td><input type="text" name="user_id" value="" /></td>
@@ -52,5 +55,6 @@
         </table>
         <input type="hidden" name="dept" value="<%=(String)session.getAttribute("live_dept")%>" />
     </form>
+        </div>
     </body>
 </html>

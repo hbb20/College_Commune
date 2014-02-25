@@ -21,7 +21,7 @@
                 Your Account has Been Suspended by the Departmental Admin.
                 
             </h3>
-            <form action="j1_home.jsp" method="post" >
+            <form action="jM1_startup.jsp" method="post" >
                 <input type="submit" value="Back To Home" style="margin-left: 45%" name="Back" />
         </form>
         </div>

@@ -55,11 +55,11 @@
                          f_name=rs.getString(2);
                          l_name=rs.getString(3);
                          
-                             %> <form name="<%=id%>" action="s2_da_req_restore" method="post"><table border="1" align="center">
-                         <tr> <td><%=id%></td>
-                          <td><%=f_name%></td>
-                          <td><%=l_name%></td> 
-                          <td><input type="submit" value="Restore Request" name="<%=rs.getString(1)%>" /></td>
+                             %> <form name="<%=id%>" action="s2_da_req_restore" method="post"><table border="0" align="center">
+                         <tr> <td width="100px"><%=id%></td>
+                             <td width="150px"><%=f_name%>&nbsp;<%=l_name%></td>
+                          
+                             <td><input type="submit" value="Restore Request" name="<%=rs.getString(1)%>" style="width: 150px" /></td>
                           <td><input type="hidden" name="user_id" value="<%=id%>" /></form>
                          
                       </tr></table>

@@ -210,7 +210,7 @@ public class notice_model {
 
     }
 
-    public static ResultSet fetchNoticebyClass(String branch, int level) {
+    public static ResultSet fetchNoticebyClass(String branch,int level) {
         Connection conn = (Connection) new c_c_db().getDB();
         notice_model n = new notice_model();
         ResultSet rs = null;
@@ -223,7 +223,6 @@ public class notice_model {
 
         } catch (SQLException ex) {
             System.out.print("notice_fetchbyclass_execption " + ex);
-           
         }
      /*   try {
             while (rs.next()) {

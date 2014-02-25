@@ -5,13 +5,21 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="c_c_db_package.student,c_c_db_package.notice_model;" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <%@include file="j_under_construction.jsp" %> 
+    <body height="100%" width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
+    <% 
+        student s=new student();
+        s=s.fetchStudent((String)session.getAttribute("live_user"));
+        //int level=s.getLevel();
+        
+        
+        %>
+        All notices
     </body>
 </html>

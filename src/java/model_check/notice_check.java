@@ -31,7 +31,7 @@ public class notice_check {
                 // { int deleted=notice_model.deleteNotice(12);}
         
         //fatch notice by class
-        notice_model.fetchNoticebyClass("IT",2);
+        //notice_model.fetchNoticebyClass("IT","2");
         
     }
 

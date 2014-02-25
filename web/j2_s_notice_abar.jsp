@@ -19,19 +19,10 @@
             <tbody>
                 <tr>
                     
-                    <td width="150px"><form name="level1_form" action="j2_da_canvas_level1.jsp" target="content_holder">
-                       <input type="submit" value="1st Year"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
+                    <td width="150px"><form name="level1_form" action="j2_s_notice_viewAll.jsp" target="content_holder">
+                       <input type="submit" value="View All"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
 
-                     <td  width="150px"><form name="level2_form" action="j2_da_canvas_level2.jsp" target="content_holder">
-                       <input type="submit" value="2nd Year"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
-                       
-                     <td  width="150px"><form name="level3_form" action="j2_da_canvas_level3.jsp" target="content_holder">
-                       <input type="submit" value="3rd Year"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
-                       
-                       
-                     <td  width="150px"><form name="level4_form" action="j2_da_canvas_level4.jsp" target="content_holder">
-                       <input type="submit" value="4th Year"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
-                       
+                 
                     
                
                 </tr>

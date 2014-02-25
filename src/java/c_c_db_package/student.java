@@ -25,8 +25,7 @@ public class student {
     String f_name,m_name,l_name,self_cell,parent_cell,email,local_add,per_add,user_id,batch_year_s,level_s,dept,fa;
     Integer level,batch_year;
    public student()
-   {
-       
+   {    
    }
    public student(String f_name,String m_name,String l_name,String self_cell,String parent_cell,String email,String local_add,String per_add,String user_id,String batch_year_s,String level_s,String dept,String fa)
     {
