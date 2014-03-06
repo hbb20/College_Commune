@@ -19,7 +19,7 @@
             <tbody>
                 <tr>
                     
-                    <td width="150px"><form name="level1_form" action="j2_da_canvas_viewAll.jsp" target="content_holder">
+                    <td width="150px"><form name="level1_form" action="j2_s_canvas_viewAll.jsp" target="content_holder">
                        <input type="submit" value="My class"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
 
                     

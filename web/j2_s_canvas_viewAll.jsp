@@ -13,5 +13,6 @@
     </head>
     <body>
         <%@include file="j_under_construction.jsp" %> 
+        <%=(String)session.getA%>
     </body>
 </html>

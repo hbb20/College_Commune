@@ -22,7 +22,7 @@
                     <td width="150px"><form name="level1_form" action="j2_f_notice_viewAll.jsp" target="content_holder">
                        <input type="submit" value="View All"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
 
-                     <td  width="150px"><form name="level2_form" action="j2_f_notice_add" target="content_holder">
+                     <td  width="150px"><form name="level2_form" action="j2_f_notice_add.jsp" target="content_holder">
                        <input type="submit" value="Add notice"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
                        
                      <td  width="150px"><form name="level3_form" action="j2_f_notice_my.jsp" target="content_holder">

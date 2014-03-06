@@ -58,13 +58,11 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="checkbox" name="levels" value="1" />level 1<input type="checkbox" name="levels" value="2" />level 2<input type="checkbox" name="levels" value="3" />level 3<input type="checkbox" name="levels" value="4" />level 4</td>
+                            <td><input type="checkbox" name="levels" value="faculty" />Faculties<input type="checkbox" name="levels" value="1" />level 1<input type="checkbox" name="levels" value="2" />level 2<input type="checkbox" name="levels" value="3" />level 3<input type="checkbox" name="levels" value="4" />level 4</td>
                         </tr>
                         <tr>
                             <td>
                                 <input type="reset" value="reset" name="reset" />
-                            </td>
-                            <td>
                                 <input type="submit" value="submit" name="submit" />
                             </td>
                         </tr>

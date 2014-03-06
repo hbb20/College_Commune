@@ -67,14 +67,17 @@
                                 </select></td>
                         </tr>
                         <tr>
-                            <td><input type="submit" value="Home" name="btn_home" onclick="widows.location.href='<%=(String)getServletContext().getInitParameter("startup_page")%>'" /></td>
-                            <td align="right"><input type="submit" value="Place Request" /></td>
-                           
+                            
+                            
+                            <td align="right"><input type="submit" value="Place Request" /></form></td>
+                            <td> <form action="<%=(String)getServletContext().getInitParameter("startup_page")%>" target="_top" method="post">
+                                <input type="submit" value="Back To Home" name="Back" style="margin-left: 45%" /></td>
+        </form>
                         </tr>
                     </tbody>
                 </table>
 
-            </form>
+           
         </div>
     </body>
 </html>

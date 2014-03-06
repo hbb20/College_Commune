@@ -3,109 +3,66 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_admin_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_intranet_abar.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_notice_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_my.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_notice_my.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_intranet_my.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_home_userDetail.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_canvas_abar.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_notice.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_notice_viewAll.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_profile_edit.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_canvas_viewAll.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_summary_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_profile_view.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_intranet_upload.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_faculty_remove.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_profile_abar.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s1_user_check.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_da_grantNewFaculty.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_f_signup.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_profile.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_canvas_level2.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_profile_edit.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_canvas_level4.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/faculty_model.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_canvas.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/nbproject/build-impl.xml</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/student.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_intranet_viewAll.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_faculty.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_waiting.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_profile.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_admin.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_intranet_viewAll.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j_under_construction.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_da_notice_add.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_signup.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/jM_logout.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/WEB-INF/web.xml</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_add.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_s_signup.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_viewAll.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_req_approve.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_canvas_level1.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_faculty_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_home.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j_verify_student.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_intranet_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_intranet_delete.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/c_c_db.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_canvas_level3.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_log_out.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/notice_model.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/user_model.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s1_s_signup.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_intranet.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/main_header.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_admin_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_summary.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_intranet_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_intranet_viewAll.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_canvas_level1.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_canvas_viewAll.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_profile_view.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_summary_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s1_next_signup.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/pending_req.java</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/jM1_startup.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_intranet.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_notice_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_profile.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_acc_req.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_intranet_abar.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_req_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_da_req_suspended.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_delete.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_da_req_approve.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_canvas_level3.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/faculty_model.java</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_home_info.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_waiting.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_faculty.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/student.java</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_admin.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_canvas_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_abar.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_req_suspended.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_notice_add.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/model_check/student_model_check.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_notice.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_admin_resetPassword.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_da_notice_add.java</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_profile_view.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_head_all.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_canvas_level2.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_intranet.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_f_notice_add.java</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_canvas.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s2_da_req_restore.java</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_s_signup.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_add.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_viewAll.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_req_approve.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s1_login_check.java</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_f_canvas_level1.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_login.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_profile_abar.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_canvas_level4.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_faculty_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_home.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_canvas_abar.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_notice_viewAll.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/common_model.java</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_intranet_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_intranet_upload.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_notice_abar.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_intranet_delete.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_s_canvas.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_summary_dept.jsp</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/a_general_package/s1_verify_new_acc.java</file>
-            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/model_check/faculty_model_check.java</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/c_c_db_package/notice_model.java</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/src/java/model_check/notice_check.java</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_req.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_suspended.jsp</file>
+            <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j1_approved.jsp</file>
             <file>file:/H:/pesonalized%20Docs/8th%20sem/proj/Project_source/College_Commune/web/j2_da_faculty_newplace.jsp</file>
         </group>
     </open-files>

@@ -63,8 +63,6 @@
                         <tr>
                             <td>
                                 <input type="reset" value="reset" name="reset" />
-                            </td>
-                            <td>
                                 <input type="submit" value="submit" name="submit" />
                             </td>
                         </tr>

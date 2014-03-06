@@ -5,6 +5,10 @@
  */
 package model_check;
 import c_c_db_package.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -14,8 +18,8 @@ import c_c_db_package.*;
 public class notice_check {
     public static void main(String s[])
     {
-        notice_model nt=new notice_model("trial", "body", "KKP", 2);
-        boolean b=nt.storeNotice();
+       notice_model nt=new notice_model("trial", "body", "KKP", 2);
+       // boolean b=nt.storeNotice();
        // System.out.print(b);
         
         
@@ -32,6 +36,19 @@ public class notice_check {
         
         //fatch notice by class
         //notice_model.fetchNoticebyClass("IT","2");
+        
+        
+        
+        //fetch notice by sender
+        //int last=nt.fetchLastNoticeIdBySender("UDA");
+        
+       
+       
+       //notice association addition
+       boolean is_associated=nt.associateNotice("32", "dept", "lvl", "");
+       System.out.print("associated ="+is_associated);
+       
+     
         
     }
 
