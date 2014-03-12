@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
     </head>
-    <body>
-        <h1>This is Final Year project</h1>
+    <body height="100%" width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
+        <h1 align="center">This is Final Year project</h1>
     </body>
 </html>

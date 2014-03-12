@@ -6,22 +6,21 @@
 
 package a_general_package;
 
+import c_c_db_package.notice_model;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import c_c_db_package.notice_model;
-import java.sql.ResultSet;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author HARSH BHAKT
  */
-public class s2_da_notice_add extends HttpServlet {
+public class s2_f_notice_add extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,7 +36,7 @@ public class s2_da_notice_add extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         HttpSession hs=request.getSession();
-        try {
+         try {
             /* TODO output your page here. You may use following sample code. */
           String title,body,urgency,dept,level[],sender;
           int num_class,urg;
@@ -50,18 +49,13 @@ public class s2_da_notice_add extends HttpServlet {
           dept=(String)hs.getAttribute("live_dept");
           sender=(String)hs.getAttribute("live_user");
           out.printf("Title :"+title+" Body:"+body+" Urgency:"+urgency+"num_of_classes"+num_class);
-         
+          for(int i=0;i<num_class;i++)
+              out.println(level[i]);
           notice_model nm=new notice_model(title, body, sender, urg);
           boolean stored=nm.storeNotice();
           if(stored)
           {
-              String last=notice_model.fetchLastNoticeIdBySender(sender);
-               for(int i=0;i<num_class;i++)
-               {
-                   nm.associateNotice(last,dept,level[i],"");
-               }
               request.setAttribute("msg","Notice has been placed successfully");
-              
           }
           else
           {
@@ -69,7 +63,7 @@ public class s2_da_notice_add extends HttpServlet {
           }
           out.println("stored="+stored);
         } finally {
-            RequestDispatcher rd=request.getRequestDispatcher("j2_da_notice_add.jsp");
+            RequestDispatcher rd=request.getRequestDispatcher("j2_f_notice_add.jsp");
             rd.forward(request, response);
             out.close();
         }

@@ -12,10 +12,9 @@
         <title>JSP Page</title>
     </head>
    
- <frameset rows="15%,*" frameborder="0" framespacing="10">
-       
+ <frameset rows="15%,*" frameborder="0" framespacing="10">  
         <frame src="j2_f_notice_abar.jsp" name="nav_holder" >
-            <frame src="j2_f_notice_viewAll.jsp" name="content_holder">
+            <frame src="j2_f_notice_add.jsp" name="content_holder">
             
             <noframes>    <body>  demo_to_vaisu_modified </body> </noframes>
     </frameset>

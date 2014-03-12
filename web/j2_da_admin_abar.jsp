@@ -12,13 +12,18 @@
         <title>JSP Page</title>
     </head>
   
- <body  style="background-color:#999999;background-size: cover">
-        <table border="0" style="width:100%">
+  <%
+    String style_new_btn="width: 150px;height: 50px; background-image: url(./graphics/sub_btn_blank.png); background-position-x: 0";
+ %>   
+    <body  style="background-color:#999999;background-size: cover">
+        <table border="0" cellspacing="0" cellpadding="0">
             <tbody>
                 <tr>
-                    <td>&nbsp;&nbsp;</td>
-                    <td><a href="j2_da_admin_resetPassword.jsp" target="content_holder"><img src="./graphics/sub_btn_resetpwd.png"></a></td>
-               
+                    
+                    <td width="150px"><form name="f1" action="j2_da_admin_resetPassword.jsp" target="content_holder">
+                       <input type="submit" value="Reset Password"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
+
+                 
                 </tr>
             </tbody>
         </table>

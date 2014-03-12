@@ -27,7 +27,7 @@
 
     %>
     
-    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
+    <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-size: cover">
         <div>
         <h1 align="center">Still Waiting!!!</h1>
         <h2 style="color: greenyellow" align="center"><%=msg%></h2>

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : j2_s_canvas_viewAll
-    Created on : 23 Feb, 2014, 10:21:12 AM
+    Document   : j2_da_intranet_upload
+    Created on : 24 Feb, 2014, 7:27:23 AM
     Author     : HARSH BHAKT
 --%>
 
@@ -13,6 +13,5 @@
     </head>
     <body>
         <%@include file="j_under_construction.jsp" %> 
-        <%=(String)session.getA%>
     </body>
 </html>

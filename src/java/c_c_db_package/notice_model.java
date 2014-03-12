@@ -142,6 +142,26 @@ public class notice_model {
 
         return b;
     }
+    
+    
+    
+        public boolean associateNotice(String n_id,String dept,String level,String enroll) {
+        boolean b = false;
+
+        //String query="NSERT INTO `notice`( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
+        String query = "INSERT INTO `notice_asso`(`na_id`, `na_branch`, `na_level`, `na_enroll`) VALUES ('"+n_id+"','"+dept+"','"+level+"','"+enroll+"')";
+        try {
+            java.sql.Statement st = conn.createStatement();
+            // st.execute(query);
+            st.executeUpdate(query);
+            b = true;
+        } catch (SQLException ex) {
+            System.out.print("notice_association_execption " + ex);
+
+        }
+
+        return b;
+    }
 
     public static notice_model fetchNotice(int i) {
         Connection conn = (Connection) new c_c_db().getDB();
@@ -186,6 +206,51 @@ public class notice_model {
         return n;
 
     }
+    
+    
+public static ResultSet fetchNoticeBySender(String sender) {
+        Connection conn = (Connection) new c_c_db().getDB();
+        notice_model n = new notice_model();
+        ResultSet rs = null;
+        //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
+        String query = "select * from notice where n_sender_id='" +sender +"' ORDER BY n_id DESC";
+        try {
+            java.sql.Statement st = conn.createStatement();
+            // st.execute(query);
+            rs = st.executeQuery(query);
+
+        } catch (SQLException ex) {
+            System.out.print("notice_fetch by sender_execption " + ex);
+            return rs;
+        }
+       
+        return rs;
+
+    }    
+    
+public static String fetchLastNoticeIdBySender(String sender) {
+        Connection conn = (Connection) new c_c_db().getDB();
+        notice_model n = new notice_model();
+        ResultSet rs = null;
+        String last="0";
+        //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
+        String query = "select * from notice where n_sender_id='" +sender +"' ORDER BY n_id DESC";
+        try {
+            java.sql.Statement st = conn.createStatement();
+            // st.execute(query);
+            rs = st.executeQuery(query);
+            rs.next();
+            last=(rs.getString("n_id"));
+            System.out.println("Returning last notice ID :"+last+" for sender:"+sender);
+
+        } catch (SQLException ex) {
+            System.out.print("notice_fetch by sender_execption " + ex);
+          
+        }
+       
+        return last;
+
+    }    
 
     public static int deleteNotice(int i) {
         Connection conn = (Connection) new c_c_db().getDB();
@@ -210,7 +275,7 @@ public class notice_model {
 
     }
 
-    public static ResultSet fetchNoticebyClass(String branch, int level) {
+    public static ResultSet fetchNoticebyClass(String branch,String level) {
         Connection conn = (Connection) new c_c_db().getDB();
         notice_model n = new notice_model();
         ResultSet rs = null;
@@ -223,7 +288,6 @@ public class notice_model {
 
         } catch (SQLException ex) {
             System.out.print("notice_fetchbyclass_execption " + ex);
-           
         }
      /*   try {
             while (rs.next()) {

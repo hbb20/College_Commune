@@ -11,19 +11,26 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-   <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat; background-size: cover">
-        <table border="0">
-           
+     <%
+    String style_new_btn="width: 150px;height: 50px; background-image: url(./graphics/sub_btn_blank.png); background-position-x: 0";
+ %>   
+    <body  style="background-color:#999999;background-size: cover">
+        <table border="0" cellspacing="0" cellpadding="0">
             <tbody>
                 <tr>
-                    <td><a href="j2_f_all_notice.jsp" target="n_working_holder">All Notices</a></td>
-                    <td><a href="" target="n_working_holder">My Notices</a></td>
-                    <td><a href="" target="n_working_holder">Post Notice</a></td>
-                    <td></td>
-                    <td></td>
+                    
+                    <td width="150px"><form name="level1_form" action="j2_f_notice_viewAll.jsp" target="content_holder">
+                       <input type="submit" value="View All"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
+
+                     <td  width="150px"><form name="level2_form" action="j2_f_notice_add.jsp" target="content_holder">
+                       <input type="submit" value="Add notice"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
+                       
+                     <td  width="150px"><form name="level3_form" action="j2_f_notice_my.jsp" target="content_holder">
+                       <input type="submit" value="Notices by Me"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
+                       
+               
                 </tr>
             </tbody>
         </table>
-
-    </body>
+ </body>
 </html>

@@ -92,6 +92,7 @@ public class s1_login_check extends HttpServlet {
         } 
         finally {  
             RequestDispatcher rd=request.getRequestDispatcher(next_page);
+            System.out.print("next page set on login page is "+next_page+"role is "+role);
             rd.forward(request, response);
             out.close();
         }

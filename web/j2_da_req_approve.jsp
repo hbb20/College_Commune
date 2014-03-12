@@ -53,7 +53,7 @@
 
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
         <h1 align="centre">...<%=(String)session.getAttribute("live_dept")%>...Departmental Admin</h1>
-        <input type="button" value="Log Out" name="log_out" style="margin-left: 90%" onclick="window.location.href='./s2_log_out'"/>
+       
         <h3 style="color: green" align="center"><%=msg%></h3>
         <div align="center">
         
@@ -66,13 +66,13 @@
                          l_name=rs.getString(3);
                          
                              %> <form name="<%=id%>" action="s2_da_req_approve" method="post"><table border="0" align="center">
-                         <tr> <td><%=id%></td>
-                          <td><%=f_name%></td>
-                          <td><%=l_name%></td> 
-                          <td><input type="submit" value="Approve Request" name="<%=rs.getString(1)%>" /></td>
+                         <tr> <td width="100px"><%=id%></td>
+                             <td width="150px"><%=f_name%>&nbsp;<%=l_name%></td>
+                        
+                             <td><input type="submit" value="Approve Request" name="<%=rs.getString(1)%>" style="width:150px" /></td>
                           <td><input type="hidden" name="user_id" value="<%=id%>" /></form>
                           <form action="s2_da_req_suspended">
-                              <td><input type="submit" value="Suspend Request" name="<%=rs.getString(1)%>" /></td>
+                              <td><input type="submit" value="Suspend Request" name="<%=rs.getString(1)%>" style="width:150px"/></td>
                           <td><input type="hidden" name="user_id" value="<%=id%>" />
                           </form>
                       </tr></table>

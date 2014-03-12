@@ -18,9 +18,8 @@
     fetch = s.fetchStudent((String) session.getAttribute("live_user"));
 
 %>
-   <body>
+  <body height="100%" width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
         <h1 align="center">Student profile</h1>
-        <input type="button" value="Log Out" name="log_out" style="margin-left: 90%" onclick="window.location.href = './s2_log_out'"/>
         <div style="background-image: url(./graphics/div_flat_pink.png);margin-left:30%;margin-right:30%  ">
             <table border="0" align="center">
 
