@@ -35,7 +35,6 @@
         <div align="center" style="background-image: url(./graphics/div_flat_back_pink.png);margin-left:30%;margin-right:30%  ">
             <form action="s1_login_check" method="post">
                 <table align="center">
-                    
                         <tr>
                             <td colspan="2" align="center">
                                 <h3> Enter Details</h3>

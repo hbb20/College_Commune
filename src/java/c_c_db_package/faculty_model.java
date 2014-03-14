@@ -6,7 +6,7 @@
 
 package c_c_db_package;
 import c_c_db_package.c_c_db;
-import com.mysql.jdbc.*;
+//import com.mysql.jdbc.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -65,7 +65,7 @@ public class faculty_model {
     }
     public ResultSet getDeptFaculty(String depatment)
     {
-         com.mysql.jdbc.Connection con = (com.mysql.jdbc.Connection) new c_c_db().getDB();
+         Connection con = (Connection) new c_c_db().getDB();
       
         ResultSet rs = null;
         //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";

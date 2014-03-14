@@ -15,13 +15,13 @@
   <%
     String style_new_btn="width: 150px;height: 50px; background-image: url(./graphics/sub_btn_blank.png); background-position-x: 0";
  %>   
-    <body  style="background-color:#999999;background-size: cover">
+ <body class="sub_abar_body"    style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>)" >
         <table border="0" cellspacing="0" cellpadding="0">
             <tbody>
                 <tr>
                     
-                    <td width="150px"><form name="f1" action="j2_da_admin_resetPassword.jsp" target="content_holder">
-                       <input type="submit" value="Reset Password"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
+                    <td><form name="f1" action="j2_da_admin_resetPassword.jsp" target="content_holder">
+                       <input type="submit" class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Reset Password"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
 
                  
                 </tr>

@@ -22,7 +22,7 @@ and open the template in the editor.
 .input_div
 {
     border-width: 4px;
-    border-color:coral;
+    border-color: coral;
     border-style: solid;
     border-radius: 10px;
   //  background-image:url("graphics/div_grad.png");
@@ -31,8 +31,90 @@ and open the template in the editor.
     background-size: cover;
 }
 
+.input_button
+{background-color: navajowhite;
+     border-color: navajowhite;
+   border-width:thin;
+           border-top-width: 0;
+   border-right-width: 0;
+   
+}
+
 .margins{
-    margin-left: 200px;
-    margin-right: 200px;
+
     background-image: url("graphics/body_bg.png");
 }
+
+
+
+.main_abar_button{
+    background-image: url("graphics/sub_btn1.png");
+    height: 50px;
+    width: 200px;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: large;
+    color: whitesmoke;
+    border-width: 2px;
+    border-color: black;
+    border-style:none;
+    border-right-width: 2px;
+    border-right-color: #c7c1c7;
+        border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+.main_abar_button:hover{
+    background-image: url("graphics/sub_btn1_hover.png");
+    background-size: cover;
+}
+
+.sub_abar_body{
+    
+    background-repeat:no-repeat;background-size: cover;margin-top: 0px;margin-bottom:0px; 
+}
+
+
+.font_red{
+    color: #ee688d;
+}
+
+.sub_abar_button{
+    background-image: url("graphics/sub_btn1.png");
+    height: 40px;
+    width: max-content;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: whitesmoke;
+    border-width: 2px;
+    border-color: black;
+    border-style:none;
+    border-right-width: 2px;
+    border-right-color: #c7c1c7;
+    
+}
+
+
+.sub_abar_button_left{
+     
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+   }
+   
+
+.sub_abar_button_right{
+     
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+   }   
+   
+.sub_abar_button:hover{
+    background-image: url("graphics/sub_btn1_hover.png");
+    background-size: cover;
+}
+

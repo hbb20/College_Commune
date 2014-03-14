@@ -8,19 +8,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="j0_general.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-  <%
-    String style_new_btn="width: 150px;height: 50px; background-image: url(./graphics/sub_btn_blank.png); background-position-x: 0";
- %>   
-    <body  style="background-color:#999999;background-size: cover">
+
+    <body  class="sub_abar_body" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>)" >
         <table border="0" cellspacing="0" cellpadding="0">
             <tbody>
                 <tr>
                     
-                    <td width="150px"><form name="level1_form" action="j2_da_summary_dept.jsp" target="content_holder">
-                       <input type="submit" value="Depatment"  style="<%=style_new_btn%>" name="Faculty" /></form></td>
+                    <td><form name="level1_form" action="j2_da_summary_dept.jsp" target="content_holder">
+                       <input type="submit"   class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Depatment"   name="Faculty" /></form></td>
 
                        
                     

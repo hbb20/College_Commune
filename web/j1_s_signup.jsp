@@ -85,10 +85,9 @@
                    <tr>
                        <td align="right"><input  class="input_textBox" type="text" name="f_name" value="" size="12" placeholder=" Fisrt Name" onblur="nameval(this.value);"  /></td>
                        <td><input class="input_textBox"  type="text" name="m_name" placeholder=" Father's Name" value="" size="12" /></td>
-                       <td><input class="input_textBox"  type="text" name="l_name" placeholder=" Surname"value="" size="12" /></td>
+                       <td><input class="input_textBox" width="90px" type="text" name="l_name" placeholder=" Surname"value="" size="12" /></td>
                    
                    </tr>
-                   <tr></tr>
                    <tr><td>
                    <h3> Contact Details:</h3></td>
                    </tr>
@@ -102,7 +101,6 @@
                        <td align="right">Email</td>
                        <td colspan="2"><input class="input_textBox"  type="text" name="email" value="" /></td>
                     </tr>
-                   <tr></tr>
                    <tr><td align="right"><h3>Address</h3></td></tr>
                    <tr>
                        <td align="right">Local</td>
@@ -153,11 +151,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="right">
-                        Department
-                    </td>
+                    <td align="right">Department  </td>
                 <td><select class="input_textBox"  name="dept">
-                          <option value="IT">Info. Tech.</option>
+                    <option value="IT">Info. Tech.</option>
                     <option value="CE">Computer Eng.</option>
                     <option value="EC">Electronics & Comm.</option>
                     <option value="FT">Food Processing</option>
@@ -175,14 +171,14 @@
                     <td><input class="input_textBox" type="text" name="user_id" value="<%=(String)session.getAttribute("user_id")%>" readonly="readonly">
                     
                 </tr>
-                <tr><td>password</td><td><input  class="input_textBox" type="password" id="txtNewPassword" name="pwd1" value="" /></td></tr>
-                <tr><td>RE-password</td><td><input class="input_textBox"  type="password" id="txtConfirmPassword" onchange="passwordval" name="pwd2" value="" /></td></tr>
+                <tr><td align="right">password</td><td><input  class="input_textBox" type="password" id="txtNewPassword" name="pwd1" value="" /></td></tr>
+                <tr><td align="right">RE-password</td><td><input class="input_textBox"  type="password" id="txtConfirmPassword" onchange="passwordval" name="pwd2" value="" /></td></tr>
                 
                 <tr></tr>
                 <tr></tr>
                 <tr></tr>
-                <tr><td align="right"><input  class="input_textBox" type="button" value="Back" name="btn_back" onclick="window.location.href='./j1_approved.jsp'" onclick="mobnum(document.form1.text1)"/></td>
-                   <td><input  class="input_textBox" type="submit" value="Submit" name="btn_submit" /></td></tr>
+                <tr><td align="right"><input  class="input_button" type="button" value="Back" name="btn_back" onclick="window.location.href='./j1_approved.jsp'" onclick="mobnum(document.form1.text1)"/></td>
+                   <td><input  class="input_button" type="submit" value="Submit" name="btn_submit" /></td></tr>
                 <tr><td><input class="input_textBox"  type="hidden" name="hh" value="" /><td></tr>
             </table>
         </div>
