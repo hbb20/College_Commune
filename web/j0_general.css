@@ -25,9 +25,7 @@ and open the template in the editor.
     border-color: coral;
     border-style: solid;
     border-radius: 10px;
-  //  background-image:url("graphics/div_grad.png");
-    background-repeat: no-repeat;
-    
+  //  background-image:url("graphics/div_grad.png");    
     background-size: cover;
 }
 
@@ -66,7 +64,8 @@ and open the template in the editor.
         border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     
-    
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .main_abar_button:hover{
     background-image: url("graphics/sub_btn1_hover.png");
@@ -91,11 +90,10 @@ and open the template in the editor.
     margin-left: 0px;
     margin-right: 0px;
     color: whitesmoke;
-    border-width: 2px;
-    border-color: black;
     border-style:none;
-    border-right-width: 2px;
-    border-right-color: #c7c1c7;
+       
+    margin-left: 20px;
+    margin-right: 20px;
     
 }
 
@@ -118,3 +116,8 @@ and open the template in the editor.
     background-size: cover;
 }
 
+.intro_div
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
