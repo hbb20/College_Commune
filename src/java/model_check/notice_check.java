@@ -32,8 +32,8 @@ public class notice_check {
         
         
         //delete
-                // { int deleted=notice_model.deleteNotice(12);}
-        
+                { int deleted=notice_model.deleteNotice(13);}
+      
         //fatch notice by class
         //notice_model.fetchNoticebyClass("IT","2");
         
@@ -45,8 +45,8 @@ public class notice_check {
        
        
        //notice association addition
-       boolean is_associated=nt.associateNotice("32", "dept", "lvl", "");
-       System.out.print("associated ="+is_associated);
+      // boolean is_associated=nt.associateNotice("32", "dept", "lvl", "");
+       //System.out.print("associated ="+is_associated);
        
      
         

@@ -23,10 +23,10 @@
 
             int urgency;
             String u_low, u_normal, u_high, color = "";
-            u_low = "lightgray";
-            u_normal = "antiquewhite";
-            u_high = "darksalmon";
-        %>  <h3>For faculty</h3><%
+            u_low = "#ffff99";
+            u_normal = "#99ff99";
+            u_high = "#F20625";
+        %>  <h2>For faculty</h2><%
             rs = nm.fetchNoticebyClass(branch, "faculty");
             if (rs.next()) {  %> <table  border = "0" cellpadding = "0"><%
 
@@ -60,7 +60,7 @@
         %>
 
 
-        <h3>For First Year</h3><%
+        <h2>For First Year</h2><%
             rs = nm.fetchNoticebyClass(branch, "1");
                 if (rs.next()) {  %> <table  border = "0" cellpadding = "0"><%
 
@@ -88,13 +88,13 @@
             %>  </table ><%
         } else {
             %>
-        <h2>First year do not have Any Notice yet</h2>
+        <h4>First year do not have Any Notice yet</h4>
         <%
             }
         %>     
 
 
-        <h3>For Second Year</h3><%
+        <h2>For Second Year</h2><%
             rs = nm.fetchNoticebyClass(branch, "2");
                 if (rs.next()) {  %> <table  border = "0" cellpadding = "0"><%
 
@@ -121,14 +121,14 @@
             %>  </table><%
         } else {
             %>
-        <h2>Second year  do not have Any Notice yet</h2>
+        <h4>Second year  do not have Any Notice yet</h4>
         <%
             }
         %>     
 
         
         
-        <h3>For Third Year</h3><%
+        <h2>For Third Year</h2><%
             rs = nm.fetchNoticebyClass(branch, "3");
                 if (rs.next()) {  %> <table  border = "0" cellpadding = "0"><%
 
@@ -156,13 +156,13 @@
             %>  </table ><%
         } else {
             %>
-        <h2>Third year do not have Any Notice yet</h2>
+        <h4>Third year do not have Any Notice yet</h4>
         <%
             }
         %>     
 
 
-        <h3>For Fourth Year</h3><%
+        <h2>For Fourth Year</h2><%
             rs = nm.fetchNoticebyClass(branch, "4");
                 if (rs.next()) {  %> <table  border = "0" cellpadding = "0"><%
 
@@ -190,7 +190,7 @@
             %>  </table ><%
         } else {
             %>
-        <h2>Fourth year do not have Any Notice yet</h2>
+        <h4>Fourth year do not have Any Notice yet</h4>
         <%
             }
         %>     

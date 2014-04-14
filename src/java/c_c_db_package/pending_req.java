@@ -125,6 +125,22 @@ public ResultSet getSuspended(String dept)
         return done;
     }
 
+   
+     public boolean delete_suspend(String user_id) {
+        String f_name;
+        f_name = "";
+        String l_name = "";
+        String dept = "";
+        
+        pending_req pr = new pending_req();
+        boolean done = false;
+             pr.eraseSuspendedRequest(user_id);
+       // return done;
+        return true;
+    }
+
+   
+    
     
     public int set_new_pr(String user_id, String f_name, String l_name, String branch, String rl) {
         boolean b = false;

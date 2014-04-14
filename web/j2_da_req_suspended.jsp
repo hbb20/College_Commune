@@ -42,7 +42,6 @@
     %>
 
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
-        <h1 align="centre">...<%=(String)session.getAttribute("live_dept")%>...Departmental Admin</h1>
         <input type="button" value="Log Out" name="log_out" style="margin-left: 90%" onclick="window.location.href='./s2_log_out'"/>
         <h3 style="color: green" align="center"><%=msg%></h3>
         <div align="center">
@@ -60,8 +59,11 @@
                              <td width="150px"><%=f_name%>&nbsp;<%=l_name%></td>
                           
                              <td><input type="submit" value="Restore Request" name="<%=rs.getString(1)%>" style="width: 150px" /></td>
-                          <td><input type="hidden" name="user_id" value="<%=id%>" /></form>
-                         
+                             <td><input type="hidden" name="user_id" value="<%=id%>" /></td></form>
+                             <form action="s2_da_req_delete" method="post">
+                                 <td><input type="hidden" name="user_id" value="<%=id%>" /></td>
+                             <td><input type="submit" value="Delete Request" name="del_req" style="width: 150px"/></td>
+                             </form>
                       </tr></table>
                       <%}%>
             

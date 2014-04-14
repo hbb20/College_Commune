@@ -52,7 +52,7 @@
     %>
 
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
-        <h1 align="centre">...<%=(String)session.getAttribute("live_dept")%>...Departmental Admin</h1>
+        
        
         <h3 style="color: green" align="center"><%=msg%></h3>
         <div align="center">

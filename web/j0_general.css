@@ -9,14 +9,12 @@ and open the template in the editor.
 */
 
 .input_textBox
-{   
+{  
    border-color: coral;
    border-width:thin;
            border-top-width: 0;
    border-right-width: 0;
-   
    background: inherit;
-  
 }
 
 .input_div
@@ -47,7 +45,7 @@ and open the template in the editor.
 
 .main_abar_button{
     background-image: url("graphics/sub_btn1.png");
-    height: 50px;
+    height: 40px;
     width: 200px;
     background-size: cover;
     margin-left: 0px;
@@ -90,11 +88,7 @@ and open the template in the editor.
     margin-left: 0px;
     margin-right: 0px;
     color: whitesmoke;
-    border-style:none;
-       
-    margin-left: 20px;
-    margin-right: 20px;
-    
+    border-style:none;  
 }
 
 

@@ -4,6 +4,7 @@
     Author     : HARSH BHAKT
 --%>
 
+<%@page import="c_c_db_package.user_model"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -13,10 +14,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-  
+  <%
+  user_model um=null;
+ 
+ 
+  %>
     <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: inherit">
         <table border="0" style="height: 100%" align="right">
             <tbody>
+                <tr>
+                    <td align="center"><H3><%=(String)session.getAttribute("live_user")%></H3><h3><%=user_model.get_full_dept((String)session.getAttribute("live_dept"))%></h3></td>
+                </tr>
                 <tr>
                     <td><form name="request_form" action="j2_da_req.jsp" target="workingFrame">
                             <input type="submit" class="main_abar_button" width="50 px"   value="Account Request" name="request_submit" /></form></td></tr>

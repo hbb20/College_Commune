@@ -8,13 +8,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript">
+            
+        </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Good Bye</title>
     </head>
-    <body  width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-size: cover">
-        <h1>You have logged out Successfully</h1>
-        <form name="a1" action="jM1_startup.jsp" target="_top">
-            <input type="submit" value="Get Back to Home" name="f1" />
+    <body onload="document.a1.submit()" width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-size: cover">
+       
+        <form name="a1" action="jM1_startup.jsp" id="f1" target="_top">
+            <input style="visibility: hidden" type="submit" value="Get Back to Home" name="f1" />
         </form>
     </body>
 </html>

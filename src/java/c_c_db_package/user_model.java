@@ -44,6 +44,28 @@ public class user_model {
             return rtrn;
         }
     }
+public static String get_full_dept(String s_dept) {
+        Connection conn = (Connection) new c_c_db().getDB();
+        notice_model n = new notice_model();
+        ResultSet rs = null;
+        String full_dept="";
+        //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
+        String query = "select * from dept_table where s_name='" +s_dept +"'";
+        try {
+            java.sql.Statement st = conn.createStatement();
+            // st.execute(query);
+            rs = st.executeQuery(query);
+            rs.next();
+            full_dept=rs.getString("name");
+
+        } catch (SQLException ex) {
+            System.out.print("get_full_name exception " + ex);
+            return full_dept;
+        }
+       
+        return full_dept;
+
+    }    
 
     public void setDept(String dept) {
 
