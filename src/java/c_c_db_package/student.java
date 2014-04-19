@@ -109,7 +109,40 @@ public class student {
         }
     }
 
+
+    public static String getStudentName(String user_id)
+    {
         
+        Integer count=0;
+        ResultSet rs=null;
+        student stud=null;
+     String query="select * from student where user_id='"+user_id+"'";
+     //  String query="insert into student values('t_id2_ok','t_fname','t_mname','t_lname',2,'t_scell','t_pcell','t_ladd','t_padd','no avtar',3,'try_email','try_dept','UDA')";
+     String result_param="NA";   
+     try {
+             c_c_db ccd=new c_c_db();
+             Connection conn=ccd.getDB();
+           Statement St=conn.createStatement();
+            rs=St.executeQuery(query);
+           
+            if(rs.next())
+            {
+                result_param=rs.getString(2)+" "+rs.getString(4);
+            }
+            else
+            {
+               // stud=new student("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000", user_id, 0, 0, "0000", "0000");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        finally
+        {
+            
+            return result_param;
+        }
+    }
+
         
         
         

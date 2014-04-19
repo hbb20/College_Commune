@@ -16,14 +16,15 @@
     </head>
   <%
   user_model um=null;
- 
+ String title_name=(String)session.getAttribute("live_user");
+ title_name=title_name.toUpperCase();
  
   %>
     <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: inherit">
         <table border="0" style="height: 100%" align="right">
             <tbody>
                 <tr>
-                    <td align="center"><H3><%=(String)session.getAttribute("live_user")%></H3><h3><%=user_model.get_full_dept((String)session.getAttribute("live_dept"))%></h3></td>
+                    <td align="center"><H3><%=title_name%></H3><h3><%=user_model.get_full_dept((String)session.getAttribute("live_dept"))%></h3></td>
                 </tr>
                 <tr>
                     <td><form name="request_form" action="j2_da_req.jsp" target="workingFrame">

@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
-        <table border="0" align="center">
+        <table border="0" cellspacing="0" cellpadding="0" align="center">
              <tbody>
                 <tr>
                     <td><form name="f_cc" action="j1_home_info_cc.jsp" target="infoPageHolder"><input width="150px" class="sub_abar_button sub_abar_button_left" type="submit" value="About Project" name="submit_project_info" />
@@ -22,7 +22,7 @@
                         </form></td>
                     <td><form name="f_GTU" action="j1_home_info_gtu.jsp" target="infoPageHolder"><input width="150px" class="sub_abar_button" type="submit" value="About G.T.U" name="submit_project_info" />
                         </form></td>
-                    <td><form name="developement_team" action="j1_home_info_developer.jsp" target="infoPageHolder"><input width="150px" class="sub_abar_button sub_abar_button_right" type="submit" value="Developement Team" name="submit_project_info" />
+                    <td><form name="developement_team" action="j1_home_info_developer.jsp" target="infoPageHolder"><input width="150px" class="sub_abar_button sub_abar_button_right" type="submit" value="About Us" name="submit_project_info" />
                         </form></td>    
                         
                 </tr>

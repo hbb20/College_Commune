@@ -4,6 +4,7 @@
  */
 package a_general_package;
 
+import c_c_db_package.student;
 import c_c_db_package.user_model;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -47,6 +48,7 @@ public class s1_login_check extends HttpServlet {
             role=um.check_role_user(user_id);
             valid=um.verify_user(user_id, pass);
             String dept=um.getDept(user_id);
+            student std=new student();
             if(valid.equals("ok"))
                
             {  hs.setAttribute("user_id", user_id);
@@ -56,6 +58,8 @@ public class s1_login_check extends HttpServlet {
                         hs.setAttribute("live_user",user_id);
                         hs.setAttribute("live_role","student");
                         hs.setAttribute("live_dept",dept);
+                        std=std.fetchStudent(user_id);
+                        hs.setAttribute("live_level",std.getLevel().toString());
                     }
                     else if(role.equals("faculty") )
                     {   hs.setAttribute("live_user",user_id);

@@ -48,11 +48,9 @@
            {msg="";  }
 
     %>
-
-    Your Notices
     
      <body style="background-image:url(<%=(String) getServletContext().getInitParameter("background_image")%>);">
-
+         <h4 style="color: red"><%=msg%></h4>
 
         <%
             String branch = (String) session.getAttribute("live_dept");

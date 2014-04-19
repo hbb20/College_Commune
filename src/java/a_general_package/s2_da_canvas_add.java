@@ -6,21 +6,22 @@
 
 package a_general_package;
 
-import c_c_db_package.notice_model;
-import c_c_db_package.pending_req;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import c_c_db_package.class_canvas_model;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.http.HttpSession;
+
 
 /**
  *
  * @author HARSH BHAKT
  */
-public class s2_da_notice_delete extends HttpServlet {
+public class s2_da_canvas_add extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,25 +36,36 @@ public class s2_da_notice_delete extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        String notice_id=request.getParameter("n_id");
-      
-        
-        String msg="Some Error occured";
-        String next_page=request.getParameter("page");
+        String requested_page="j3_canvas_send.jsp";
+        String sender_id,msg_text,dept;
+        String msg;
+        int level;
+        HttpSession hs=request.getSession();
+        class_canvas_model ccm;
         try {
             /* TODO output your page here. You may use following sample code. */
-           
-             //out.print(user_id);
-            int done=notice_model.deleteNotice(Integer.parseInt(notice_id));
-            if(done!=0)
+           // sender_id=request.getParameter("sender_id");
+            msg_text=request.getParameter("msg_text");
+            //dept=request.getParameter("dept");
+           // level=Integer.parseInt(request.getParameter("level"));
+            if(msg_text.length()!=0){
+            sender_id=(String)hs.getAttribute("live_user");
+            dept=(String)hs.getAttribute("live_dept");
+            level=Integer.parseInt((String)hs.getAttribute("live_level"));
+            ccm=new class_canvas_model(sender_id, msg_text, dept, level);
+             
+            boolean isDone=ccm.add_new_message();
+            if(!isDone)
             {
-                msg=  "Requested notice Has Been Deleted";
+                msg="Could not send your message to chat";
             }
-        } finally {         
-            request.setAttribute("msg",msg);
-            RequestDispatcher rd=request.getRequestDispatcher(next_page);
+            }
+            else
+                msg="Can not post Empty message";
+        } finally {
+            RequestDispatcher rd=request.getRequestDispatcher(requested_page);
             rd.forward(request, response);
-          
+            out.close();
         }
     }
 

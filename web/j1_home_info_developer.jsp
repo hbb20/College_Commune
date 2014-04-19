@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
-        <h1 align="center"> Development Team</h1>
+        <h1 align="center">About Us</h1>
         <div class="intro_div">
             
         </div>

@@ -46,7 +46,6 @@
                 <tr style="background-color:<%=color%> ">
                     <td width="100"><%=(String) rs.getString("n_title")%> </td>
                     <td width="300"><%=(String) rs.getString("n_body")%> </td>
-                    <td width="70"><%=(String) rs.getString("n_sender_id")%> </td>
                     <td width="170"><%=(String) rs.getString("n_time")%> </td>
                 </tr>
             </tbody>
