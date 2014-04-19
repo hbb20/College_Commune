@@ -11,7 +11,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <%@include file="j_under_construction.jsp" %> 
-    </body>
+    <%
+        session.setAttribute("live_level","2");
+    %>
+   
+        <%@include file="j3_canvas.jsp" %> 
+   
 </html>

@@ -42,7 +42,6 @@
     %>
 
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
-        <input type="button" value="Log Out" name="log_out" style="margin-left: 90%" onclick="window.location.href='./s2_log_out'"/>
         <h3 style="color: green" align="center"><%=msg%></h3>
         <div align="center">
         

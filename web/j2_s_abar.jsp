@@ -19,7 +19,7 @@
                 
                 <tr>
                     <td><form name="notice_form" action="j2_s_notice.jsp" target="workingFrame">
-                        <input type="submit" value="Notice Board"   name="Notice Board" /></form></td></tr>
+                        <input type="submit" value="Notice Board"  class="main_abar_button"   name="Notice Board" /></form></td></tr>
                 
                 
                 

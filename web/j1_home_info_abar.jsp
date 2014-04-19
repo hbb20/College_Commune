@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
-        <table border="0" align="center">
+        <table border="0" cellspacing="0" cellpadding="0" align="center">
              <tbody>
                 <tr>
                     <td><form name="f_cc" action="j1_home_info_cc.jsp" target="infoPageHolder"><input width="150px" class="sub_abar_button sub_abar_button_left" type="submit" value="About Project" name="submit_project_info" />

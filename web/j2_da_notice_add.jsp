@@ -13,6 +13,7 @@
     </head>
      <%
     String msg="";
+    String color_msg="green";
     try{
     msg=(String)request.getAttribute("msg");
        }
@@ -24,20 +25,19 @@
         request.removeAttribute("msg");
     }
          if(msg==null)
-                                  {msg="";  }
+                                  {msg="Add New notice"; 
+                                  color_msg="black";
+                                  }
 
     %>
     <body height="100%" width="100%" style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
         <h2 align="center"><%=(String) session.getAttribute("live_dept")%> New Notice</h2>
-        
+        <h4 style="color:<%=color_msg%>" align="center"><%=msg%></h4>
         <div align="center" style="background-image: url(./graphics/div_flat_back_pink.png);margin-left:30%;margin-right:30%;background-size:cover;  ">
             <form name="f1" action="s2_da_notice_add" method="POST" >
                 <table border="0">
                     <tbody>
-                        <tr>
-                            <td>
-                            <h4><%=msg%></h4></td>
-                        </tr>
+                        <tr></tr>
                         <tr>
                             <td><h3>Title</h3></td>
                             <td><input type="text" name="title" value="" /></td>

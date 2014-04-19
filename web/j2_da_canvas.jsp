@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
- <frameset rows="15%,*" frameborder="0" framespacing="10">
+ <frameset rows="8%,*" frameborder="0" framespacing="10">
        
         <frame src="j2_da_canvas_abar.jsp" name="nav_holder" >
             <frame src="j2_da_canvas_level1.jsp" name="content_holder">
