@@ -21,7 +21,7 @@
         <meta http-equiv="refresh" content="20">
     </head>
     <body   style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
-        <input class="sub_abar_button sub_abar_button_left sub_abar_button_right" align="left" type="button" value="Refresh" name="refresh" onclick="rfresh();"/>
+        
         <table  border = "0" style="width: available">
         <tbody>
            <%
@@ -37,7 +37,7 @@
             String my_color,other_color;
             my_color="#99ff99";
             other_color="#99ccff";
-            class_canvas_model ccm=new class_canvas_model();
+            class_canvas_model ccm=(class_canvas_model)session.getAttribute("ccm");
                     rs=ccm.fetch_messages(dept,lvl);
               String clr,aln;
             while (rs.next()) {                 
@@ -77,6 +77,7 @@
                 </tr>
             <%
                 };
+                rs.close();
             %>   </tbody></table>
     </body>
 </html>

@@ -13,7 +13,12 @@
         <script>window.onload=function(){
              document.getElementById("focus").focus();
              parent.frames["canvas_chat"].location="j3_canvas_chat.jsp";
-        };</script>
+        };
+        
+        function rfresh(){
+            parent.frames["canvas_chat"].location="j3_canvas_chat.jsp";
+        }
+        </script>
     </head>
        <%
     String msg="";
@@ -44,6 +49,7 @@
                     <td><textarea id="focus" name="msg_text" rows="1" cols="80">
                         </textarea></td>
                         <td><input type="submit" value="Send" name="submit" /></td>
+                        <td><input class="sub_abar_button sub_abar_button_left sub_abar_button_right" align="left" type="button" value="Refresh" name="refresh" onclick="rfresh();"/></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center"><b> <%=msg%></b></td>
