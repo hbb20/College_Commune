@@ -16,6 +16,6 @@
         <frame src="j2_da_req_abar.jsp" name="nav_holder" >
             <frame src="j2_da_req_approve.jsp" name="content_holder">
             
-            <noframes>    <body>  demo_to_vaisu_modified </body> </noframes>
+            <noframes>   </noframes>
     </frameset>
 </html>

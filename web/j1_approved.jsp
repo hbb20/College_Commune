@@ -39,7 +39,7 @@ if(msg==null)
         <div align="center">
             <table>
                 <tr>
-                   <td><input type="button" value="Home" name="btn_home" onclick="window.location.href='<%=(String)getServletContext().getInitParameter("startup_page")%>'"/></td>
+                   <td><input type="button" value="Home" name="btn_home" onclick="window.location.href='jM1_startup.jsp'"/></td>
                     <td>
             <form name="f1" action="s1_next_signup" method="POST">
                 <input type="submit" value="Fill Details" name="btn1" />
