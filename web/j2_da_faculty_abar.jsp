@@ -23,7 +23,7 @@
                        <input type="submit"   class="sub_abar_button sub_abar_button_left" value="Grant new Faculty" name="Faculty" /></form></td>
 
                      <td><form name="level2_form" action="j2_da_faculty_remove.jsp" target="content_holder">
-                       <input type="submit"  class="sub_abar_button sub_abar_button_right"  value="Remove Faculty" name="Faculty" /></form></td>
+                       <input type="submit"  class="sub_abar_button sub_abar_button_right"  value="Update Faculty" name="Faculty" /></form></td>
                        
                    
                

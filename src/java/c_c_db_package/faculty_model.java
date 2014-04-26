@@ -70,7 +70,7 @@ public class faculty_model {
         ResultSet rs = null;
         //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
         String query;
-        query = "SELECT * from faculty where dept='"+depatment+"'";
+        query = "SELECT * from faculty where dept='"+depatment+"' and position!='admin'";
         try 
         {
             java.sql.Statement st = con.createStatement();
@@ -100,4 +100,36 @@ public class faculty_model {
         
     }
     
+    public boolean update_role(String uname,String role)
+    {   boolean is_done=false;
+         String query = "update faculty set position='"+role+"' where user_id='"+uname+"'";
+        try {
+            Statement st = conn.createStatement();
+            st.executeUpdate(query);
+            is_done=true;
+        } catch (SQLException ex) {
+            Logger.getLogger(pending_req.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return is_done;
+    }
+    
+    
+     public boolean remove_faculty(String uname)
+    {   boolean is_done=false;
+         String query = "delete from faculty where user_id='"+uname+"'";
+         String query2 = "delete from users where user_id='"+uname+"'";
+         String query3 = "delete from faculty_association where faculty_id='"+uname+"'";
+        try {
+            Statement st = conn.createStatement();
+            st.executeUpdate(query);
+            st.executeUpdate(query2);
+            st.executeUpdate(query3);
+            is_done=true;
+            
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(pending_req.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return is_done;
+    }
 }

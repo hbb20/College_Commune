@@ -10,63 +10,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="j0_general.css">
         <script type="text/javascript">
-            function nameval(value1)
-            {
-                //value1= document.form.name.value;
-                if(value1=="")
-                {
-                    alert("Please Enter Your Name");
-                    document.f.f_name.focus();
-                    return false;
-                }
-                if(!isNaN(f_name=="")
-                {
-                alert("Please Enter Only Characters");
-                document.f.f_name.select();
-                return false;
-                }
-            }
-            function mobnum(text)  
-            {  
-                var self_cell = /^[0-9]+$/;  
-                if((self_cell.Length!==10) && text.value.match(self_cell))  
-                {  
-                    alert('you have return perfect mobile num');  
-                    document.form1.text1.focus();  
-                    return true;  
-                } 
-                else  
-                {     
-                    alert('Please enter only 10 digit mobile number');  
-                    document.form1.text1.focus();  
-                    return false;  
-                } 
-             function passwordval() 
-             {
-                     var password = $("#txtNewPassword").val();
-                     var confirmPassword = $("#txtConfirmPassword").val();
-
-               if (password !== confirmPassword)
-               {
-                    $("#divCheckPasswordMatch").html("Passwords do not match!");
-               }
-               else
-               {
-                    $("#divCheckPasswordMatch").html("Passwords match.");
-               } 
-             } 
-             function email_idval()
-             {
-                    var x=document.forms["myForm"]["email"].value;
-                    var atpos=x.indexOf("@");
-                    var dotpos=x.lastIndexOf(".");
-                    
-               if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
-               {
-                    alert("Not a valid e-mail address");
-                    return false;
-               }
-             }
+            
         </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Student Sign Up</title>
