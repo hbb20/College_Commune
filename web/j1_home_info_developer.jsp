@@ -13,9 +13,49 @@
         <title>JSP Page</title>
     </head>
     <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
-        <h1 align="center">About Us</h1>
-        <div class="intro_div">
-            
-        </div>
+        <h1 align="center">Developer Team</h1>
+       <table border="0">
+            <tbody>
+                <tr>
+                    <td><img src="graphics/developer_team2.jpg" width="350" height="325" alt="team pic"/>  </td>
+                    <td> <div>
+                            <table border="0" cellpadding="1">
+                               <tbody>
+                                    <tr>
+                                        <td><h3>Project Guide</h3></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Urmi D Agravat</td>
+                                    </tr>
+                                    <tr>
+                                      
+                                    </tr>
+                                    <tr>
+                                        <td><h3>Student Members</h3></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Harsh B Bhakt (100010116004)</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Vaishnavi D Patel (100010116013)</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Neel R Maheshwari (100010116022)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div></td>
+                </tr>
+            </tbody>
+        </table>
+
+        
     </body>
 </html>
