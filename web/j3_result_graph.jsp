@@ -58,7 +58,7 @@ else
     
      
      int canvas_width=800;
-     int canvas_height=500;
+     int canvas_height=300;
      
     %>
     <body>
@@ -142,7 +142,7 @@ ctx.fillText(sem[i],next_pt_x-10,next_pt_y-20);
 ctx.moveTo(next_pt_x,next_pt_y);
 }
 ctx.fillStyle = "orange"; 
-ctx.fillText(<%=display%>,15,15);
+ctx.fillText(<%=display%>,15,25);
 
 </script>
 
