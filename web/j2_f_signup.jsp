@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="c_c_db_package.user_model,java.sql.*" %>
+<%@include file="j3_check_role_f.jsp" %>
 <!DOCTYPE html>
 
 <html>

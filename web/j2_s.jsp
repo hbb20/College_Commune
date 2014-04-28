@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
+<%@include file="j3_check_role_s.jsp" %>
 
 <!DOCTYPE html>
 <html>

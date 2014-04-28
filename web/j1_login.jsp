@@ -54,7 +54,7 @@
                     <tr><td style="color: #3300ff" colspan="2"><%=msg%></td></tr>
                     <tr><td style="color: #00ffff" colspan="2">The account has been registered already.</td></tr>
                     <tr>
-                        <td><input type="button" value="Home" name="btn_home" onclick="window.location.href=<%=(String)getServletContext().getInitParameter("startup_page")%>"/></td>
+                        <td><input type="button" class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Home" name="btn_home"  onclick="window.location.href='j1_home.jsp'"/></td>
                         <td><input type="submit" value="GetIn" /></td>
                     </tr>
                 </table>

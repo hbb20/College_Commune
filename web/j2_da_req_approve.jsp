@@ -9,6 +9,7 @@
 <%@page import="com.sun.org.apache.bcel.internal.generic.AALOAD"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="c_c_db_package.*,java.sql.*" %>
+<%@include file="j3_check_role_da.jsp" %>
 
 <!DOCTYPE html>
 <html>

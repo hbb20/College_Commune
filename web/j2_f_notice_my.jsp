@@ -6,6 +6,7 @@
 
 <%@page import="java.sql.ResultSet"%>
 <%@page import="c_c_db_package.notice_model"%>
+<%@include file="j3_check_role_f.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

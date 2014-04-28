@@ -34,12 +34,13 @@
     %>
     
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: cover">
-        <h1 align="center">New Account Request</h1>
-        <div align="center">
+       
+        <div align="center" style="background-image: url(./graphics/div_flat_back_pink.png);margin-left: 30%;margin-right: 30%;background-repeat: no-repeat;background-size: cover  ">
             <form name="f1" action="s1_verify_new_acc" method="POST">
-                <table border="0">
+                <table style="margin-top: 50px" border="0">
                    
                     <tbody>
+                        <tr><td colspan="2"><h3 align="center">New Account Request</h></td></tr>
                         <tr>
                             <td colspan="2" align="center"> <%=msg%></td>
                         </tr>
@@ -71,7 +72,7 @@
                         <tr>
                             
                             
-                            <td align="left"><input type="button" class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Home" name="btn_home"  onclick="window.location.href='jM1_startup.jsp'"/></td>
+                            <td align="left"><input type="button" class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Home" name="btn_home"  onclick="window.location.href='j1_home.jsp'"/></td>
                             <td><input type="submit" value="Place Request" /> </td>
         </form>
                         </tr>

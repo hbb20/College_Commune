@@ -9,6 +9,7 @@
 <%@page import="java.sql.Connection"%>
 <%@page import="c_c_db_package.c_c_db"%>
 <%@page import="java.sql.ResultSet"%>
+<%@include file="j3_check_role_da.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
