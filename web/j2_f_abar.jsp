@@ -26,6 +26,10 @@
                         <input type="submit" class="main_abar_button"  value="Class Canvas"   name="Class Canvas" /></form></td></tr>
                 
                 <tr>
+                    <td><form name="result_form" action="j3_f_result.jsp" target="workingFrame">
+                        <input type="submit" class="main_abar_button"  value="GTU result"   name="result" /></form></td></tr>
+                
+                <tr>
                     <td><form name="intranet_form" action="j2_f_intranet.jsp" target="workingFrame">
                         <input type="submit" class="main_abar_button"  value="Intranet"   name="Intranet" /></form></td></tr>
             

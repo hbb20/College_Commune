@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-
+<%     session.setAttribute("result_target_student",(String)session.getAttribute("live_user"));%>
     <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-repeat:no-repeat;background-size: inherit">
         <table border="0" style="height: 100%" align="right">
             <tbody>
@@ -31,6 +31,10 @@
                 <tr>
                     <td><form name="intranet_form" action="j2_s_intranet.jsp" target="workingFrame">
                         <input type="submit" class="main_abar_button"  value="Intranet"  name="Intranet" /></form></td></tr>
+                <tr>
+                    <td><form name="result_form" action="j2_s_result.jsp" target="workingFrame">
+                        <input type="submit" class="main_abar_button"  value="Result"  name="Result" /></form></td></tr>
+                
                 <tr>
                     <td><form name="profile_form" action="j2_s_profile.jsp" target="workingFrame">
                         <input type="submit" class="main_abar_button"  value="Profile"  name="Notice Board" /></form></td></tr>

@@ -4,6 +4,7 @@
     Author     : HARSH BHAKT
 --%>
 
+<%@page import="c_c_db_package.student"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="c_c_db_package.gtu_result"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,10 +15,13 @@
         <title>JSP Page</title>
     </head>
     <%
-        
-     ResultSet rs=gtu_result.get_result("100010116004");
+     String result_target_student=(String)session.getAttribute("result_target_student");
+     ResultSet rs=gtu_result.get_result(result_target_student);
 String msg="";
+String name="";
+String display="";
 Double[] a=new Double[8];
+   name=student.getStudentName(result_target_student);
 if(rs.next())
 {
     a[0]=rs.getDouble(2);
@@ -28,10 +32,20 @@ if(rs.next())
     a[5]=rs.getDouble(7);
     a[6]=rs.getDouble(8);
     a[7]=rs.getDouble(9);
+   display=result_target_student;
+   
+ 
 }
 else
 {
-    msg="No result found";
+    if(student.isStudent(result_target_student))
+    {boolean isInserted=gtu_result.add_blank_gtu_result(result_target_student);
+     if(isInserted)
+         msg="Just inserted Entry";
+     else
+         msg="some error occured";
+    }
+    display="No Record Specified";
     a[0]=0.0;
     a[1]=0.0;
     a[2]=0.0;
@@ -44,21 +58,21 @@ else
     
      
      int canvas_width=800;
-     int canvas_height=400;
+     int canvas_height=500;
      
     %>
     <body>
-        <h4 color="red"><%=msg%></h4>
+        
         <canvas id="myCanvas" width="<%=canvas_width%>" height="<%=canvas_height%>" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
-        
+        <h4><%=msg%></h4>
 <script>
 
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 var margin_x=50,margin_y=50;
-var canvas_width=<%=canvas_width%>
-var canvas_height=<%=canvas_height%>
+var canvas_width=<%=canvas_width%>;
+var canvas_height=<%=canvas_height%>;
 
 ctx.stroke();
 
@@ -127,7 +141,8 @@ if(i!==0)
 ctx.fillText(sem[i],next_pt_x-10,next_pt_y-20);
 ctx.moveTo(next_pt_x,next_pt_y);
 }
-
+ctx.fillStyle = "orange"; 
+ctx.fillText(<%=display%>,15,15);
 
 </script>
 

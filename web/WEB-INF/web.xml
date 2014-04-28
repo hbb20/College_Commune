@@ -99,6 +99,10 @@
         <servlet-name>s3_result_update</servlet-name>
         <servlet-class>a_general_package.s3_result_update</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>s3_result_set_student</servlet-name>
+        <servlet-class>a_general_package.s3_result_set_student</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>s1_user_check</servlet-name>
         <url-pattern>/s1_user_check</url-pattern>
@@ -178,6 +182,10 @@
     <servlet-mapping>
         <servlet-name>s3_result_update</servlet-name>
         <url-pattern>/s3_result_update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s3_result_set_student</servlet-name>
+        <url-pattern>/s3_result_set_student</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

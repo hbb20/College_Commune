@@ -51,14 +51,15 @@ public class gtu_result {
     
     
 
-    public boolean add_blank_gtu_result(String user_id) {
+    public static boolean add_blank_gtu_result(String user_id) {
         boolean isStudent = c_c_db_package.student.isStudent(user_id);
         boolean isDone = false;
         String query = "insert into gtu_result_table values('" + user_id + "',0,0,0,0,0,0,0,0)";
         //  String query="insert into student values('t_id2_ok','t_fname','t_mname','t_lname',2,'t_scell','t_pcell','t_ladd','t_padd','no avtar',3,'try_email','try_dept','UDA')";
         if (isStudent) {
             try {
-
+                 c_c_db ccd = new c_c_db();
+                 Connection con = ccd.getDB();
                 Statement St = con.createStatement();
                 St.executeUpdate(query);
                 isDone = true;

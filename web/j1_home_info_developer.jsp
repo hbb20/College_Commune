@@ -30,7 +30,8 @@
                                         <td>Urmi D Agravat</td>
                                     </tr>
                                     <tr>
-                                      
+                                      <td></td>
+                                        <td>Mayuri D Patel</td>
                                     </tr>
                                     <tr>
                                         <td><h3>Student Members</h3></td>
