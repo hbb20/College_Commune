@@ -18,11 +18,13 @@
     </head>
      <%
     String msg="";
+    String color_msg="green";
     try{
     msg=(String)request.getAttribute("msg");
        }
     catch(Exception e)
                        {
+                           
         msg="";
     }
     
@@ -69,9 +71,8 @@
                         <tr>
                             
                             
-                            <td align="right"><input type="submit" value="Place Request" /></form></td>
-                            <td> <form action="<%=(String)getServletContext().getInitParameter("startup_page")%>" target="_top" method="post">
-                                <input type="submit" value="Back To Home" name="Back" style="margin-left: 45%" /></td>
+                            <td align="left"><input type="button" class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Home" name="btn_home"  onclick="window.location.href='jM1_startup.jsp'"/></td>
+                            <td><input type="submit" value="Place Request" /> </td>
         </form>
                         </tr>
                     </tbody>

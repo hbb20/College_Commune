@@ -80,6 +80,6 @@
             
         
         </div>
-                      <% if(checked==false){%><h3 align="center">You have No waiting Request Form Department</h3><%}%>
+                      <% if(checked==false){%><h3 align="center">You have no waiting Request from Department</h3><%}%>
     </body>
 </html>

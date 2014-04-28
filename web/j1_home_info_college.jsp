@@ -17,7 +17,7 @@
         <table border="0">
             <tbody>
                 <tr>
-                    <td><img src="graphics/adit_logo.jpg" width="350" height="325" alt="ADIT Logo"/>
+                    <td><img src="graphics/adit_logo2.jpg" width="350" height="275" alt="ADIT Logo"/>
                     </td>
                     <td> <div class="intro_div"><h3 align="center">Keeping in view, the new economic order, the globalization of the market and competitive international scenario Charutar Vidya Mandal at Vallabh Vidyanagar has started a self-financed degree engineering college named as A. D. Patel Institute of Technology on an area of 40 acres of land, behind industrial set-up of Vitthal Udyognagar.
 The campus is developed as NEW VALLABH VIDYANAGAR, which is a beautiful eco-friendly campus with lush green lawns and playgrounds.

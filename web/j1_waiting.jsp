@@ -30,7 +30,7 @@
     <body style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>); background-size: cover">
         <div>
         <h1 align="center">Still Waiting!!!</h1>
-        <h2 style="color: greenyellow" align="center"><%=msg%></h2>
+        <h2 style="color: green" align="center"><%=msg%></h2>
         <h3 align="center"> Your Account Request Has been placed...<br/>
             please Wait until DA response
         </h3>

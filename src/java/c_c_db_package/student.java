@@ -80,6 +80,36 @@ public class student {
     }
     
     
+    
+    public static boolean isStudent(String user_id)
+    {
+        ResultSet rs=null;
+        boolean isStudent=false;
+     String query="select * from student where user_id='"+user_id+"'";
+     //  String query="insert into student values('t_id2_ok','t_fname','t_mname','t_lname',2,'t_scell','t_pcell','t_ladd','t_padd','no avtar',3,'try_email','try_dept','UDA')";
+        try {
+             c_c_db ccd=new c_c_db();
+             Connection conn=ccd.getDB();
+           Statement St=conn.createStatement();
+            rs=St.executeQuery(query);
+            if(rs.next())
+            {
+             isStudent=true;
+            }
+         
+        } catch (SQLException ex) {
+            Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        finally
+        {
+            
+            return isStudent;
+        }
+    }
+    
+    
+    
+    
     public student fetchStudent(String user_id)
     {
         

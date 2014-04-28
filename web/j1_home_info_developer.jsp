@@ -17,7 +17,7 @@
        <table border="0">
             <tbody>
                 <tr>
-                    <td><img src="graphics/developer_team2.jpg" width="350" height="325" alt="team pic"/>  </td>
+                    <td><img src="graphics/developer_team2.jpg" width="350" height="275" alt="team pic"/>  </td>
                     <td> <div>
                             <table border="0" cellpadding="1">
                                <tbody>

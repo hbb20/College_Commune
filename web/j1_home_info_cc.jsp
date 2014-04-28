@@ -14,8 +14,20 @@
     </head>
     <body  style="background-image:url(<%=(String)getServletContext().getInitParameter("background_image")%>);">
         <h1 align="center">College Commune</h1>
-        <div class="intro_div">
+       <table border="0">
+            <tbody>
+                <tr>
+                    <td><img src="graphics/cc_logo.jpg" width="350" height="275" alt="ADIT Logo"/>
+                    </td>
+                    <td> <div class="intro_div" align="center"><h3>Many times the flow of communication within class, 
+                department or college leads to problems or misunderstanding.
+                But here you can stay updated with all notices of college 
+                as well as class and even stay connected with your classmate and faculty for educational purpose.</h3>
             
-        </div>
+        </div> </td>
+                </tr>
+            </tbody>
+        </table>
+
     </body>
 </html>
