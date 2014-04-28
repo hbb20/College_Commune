@@ -4,6 +4,7 @@
     Author     : HARSH BHAKT
 --%>
 
+<%@page import="c_c_db_package.student"%>
 <%@page import="c_c_db_package.user_model"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -16,6 +17,7 @@
     <%
   user_model um=null;
  String title_name=(String)session.getAttribute("live_user");
+ title_name=student.getStudentName(title_name);
  title_name=title_name.toUpperCase();
  
   %>
