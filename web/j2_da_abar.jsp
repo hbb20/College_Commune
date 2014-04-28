@@ -54,11 +54,11 @@
                     <td><form name="admin_form" action="j2_da_admin.jsp" target="workingFrame">
                             <input  type="submit"  class="main_abar_button" value="Admin"  name="Admin" /></form></td></tr>
                
-                <tr>    
+          <!--      <tr>    
                     <td><form name="summary_form" action="j2_da_summary.jsp" target="workingFrame">
-                        <input type="submit" class="main_abar_button"  width="50 px" value="Summary"  name="summary_submit" /></form></td></tr>
+                        <input type="submit" class="main_abar_button"  width="50 px" value=""  name="summary" /></form></td></tr>
                 
-                
+           -->     
                 <tr>
                     <td><form name="logout_form" action="s2_log_out" target="workingFrame">
                         <input type="submit" class="main_abar_button font_red"  value="Log Out"   name="Log Out" /></form></td></tr>
