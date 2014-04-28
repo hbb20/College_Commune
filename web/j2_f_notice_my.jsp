@@ -22,9 +22,9 @@
         String uegency;
         int urgency;
         String u_low,u_normal,u_high,color="";
-        u_low="lightgray";
-        u_normal="antiquewhite";
-        u_high="darksalmon";
+         u_low = "#ffff99";
+            u_normal = "#99ff99";
+            u_high = "#F20625";
         %>  <h3>My Notices</h3><%
         rs=nm.fetchNoticeBySender((String)session.getAttribute("live_user"));
         if(rs.next())

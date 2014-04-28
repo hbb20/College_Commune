@@ -26,9 +26,9 @@
         String uegency;
         int urgency;
         String u_low,u_normal,u_high,color="";
-        u_low="lightgray";
-        u_normal="antiquewhite";
-        u_high="darksalmon";
+        u_low = "#ffff99";
+            u_normal = "#99ff99";
+            u_high = "#F20625";
         if(rs.next())
         {  %> <table  border = "0" cellpadding = "0"><%
                   
