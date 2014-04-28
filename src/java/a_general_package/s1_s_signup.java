@@ -4,6 +4,7 @@
  */
 package a_general_package;
 
+import c_c_db_package.gtu_result;
 import c_c_db_package.pending_req;
 import c_c_db_package.student;
 import c_c_db_package.user_model;
@@ -63,6 +64,7 @@ public class s1_s_signup extends HttpServlet {
           
               
               user_model user=new user_model(user_id, pass,"s","s", dept);
+              gtu_result.add_blank_gtu_result(user_id);
              user.storeUser(user);
            
              {    next_page="j1_login.jsp";
