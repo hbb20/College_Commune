@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="j0_general.css">
     </head>
   
   <%
@@ -22,7 +23,7 @@
                 <tr>
                     
                     <td><form name="f1" action="j2_da_admin_resetPassword.jsp" target="content_holder">
-                       <input type="submit" class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Reset Password"  style="<%=style_new_btn%>" name="Faculty" /></form>
+                       <input type="submit" class="sub_abar_button sub_abar_button_left sub_abar_button_right" value="Reset Password"  name="Faculty" /></form>
                     </td>                 
                 </tr>
             </tbody>

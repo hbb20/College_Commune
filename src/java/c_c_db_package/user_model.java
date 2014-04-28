@@ -26,11 +26,14 @@ public class user_model {
 
     private String user_id, pass, role, authority, dept;
 
-    public String getDept(String user_id) {
+    public static String getDept(String user_id) {
         String rtrn = "none";
 
         String query = "select * from users where user_id='" + user_id + "'";
         try {
+            c_c_db ccd = new c_c_db();
+    Connection conn =ccd.getDB();
+     Statement statement;
             statement = conn.createStatement();
             statement.execute(query);
             ResultSet rs = statement.executeQuery(query);
@@ -52,7 +55,7 @@ public static String get_full_dept(String s_dept) {
         //String query="NSERT INTO notice( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
         String query = "select * from dept_table where s_name='" +s_dept +"'";
         try {
-            java.sql.Statement st = conn.createStatement();
+            Statement st = conn.createStatement();
             // st.execute(query);
             rs = st.executeQuery(query);
             rs.next();
@@ -154,6 +157,25 @@ public static String get_full_dept(String s_dept) {
     public user_model() {
         ccd = new c_c_db();
         conn = ccd.getDB();
+    }
+    
+    
+     public  boolean resetPass(String user_id) {
+        boolean b = false;
+
+        //String query="NSERT INTO `notice`( `n_title`, `n_body`, `n_sender_id`, `n_urgency`, `n_time`) VALUES ('"+title+"','"+body+"','"+sender+"',"+urgency+",now())";
+        String query = "UPDATE `users` SET `password`='"+user_id+"' WHERE `user_id`='"+user_id+"'";
+        try {
+            java.sql.Statement st = conn.createStatement();
+            // st.execute(query);
+            st.executeUpdate(query);
+            b = true;
+        } catch (SQLException ex) {
+            System.out.print("password_reset error" + ex);
+
+        }
+
+        return b;
     }
 
     public user_model(String user_id, String password, String role, String autho, String dept) {

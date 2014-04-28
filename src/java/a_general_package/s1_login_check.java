@@ -39,6 +39,7 @@ public class s1_login_check extends HttpServlet {
         String role="",user_id="",next_page="";
         user_model um=new user_model();
         String pass=request.getParameter("password");
+        String dept="";
         String valid="";
         try {
             /* TODO output your page here. You may use following sample code. */
@@ -47,7 +48,7 @@ public class s1_login_check extends HttpServlet {
             user_id=(String)hs.getAttribute("user_id");
             role=um.check_role_user(user_id);
             valid=um.verify_user(user_id, pass);
-            String dept=um.getDept(user_id);
+            dept=user_model.getDept(user_id);
             student std=new student();
             if(valid.equals("ok"))
                
@@ -96,7 +97,7 @@ public class s1_login_check extends HttpServlet {
         } 
         finally {  
             RequestDispatcher rd=request.getRequestDispatcher(next_page);
-            System.out.print("next page set on login page is "+next_page+"role is "+role);
+            System.out.print("next page set on login page is "+next_page+"role is "+role+" Department set is "+ dept);
             rd.forward(request, response);
             out.close();
         }

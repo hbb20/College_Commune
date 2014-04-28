@@ -25,8 +25,9 @@
         <table border="0" style="height: 100%" align="right">
             <tbody>
                 <tr>
-                    <td align="center"><H3><%=title_name%></H3><h3><%=user_model.get_full_dept((String)session.getAttribute("live_dept"))%></h3></td>
+                    <td align="center"><h3><%=title_name%></h3><h3><%=user_model.get_full_dept((String)session.getAttribute("live_dept"))%></h3></td>
                 </tr>
+                
                 <tr>
                     <td><form name="request_form" action="j2_da_req.jsp" target="workingFrame">
                             <input type="submit" class="main_abar_button" width="50 px"   value="Account Request" name="request_submit" /></form></td></tr>
@@ -52,7 +53,7 @@
                 
                 <tr>
                     <td><form name="admin_form" action="j2_da_admin.jsp" target="workingFrame">
-                            <input  type="submit"  class="main_abar_button" value="Admin"  name="Admin" /></form></td></tr>
+                            <input  type="submit"  class="main_abar_button" value="Reset Password"  name="Admin" /></form></td></tr>
                
           <!--      <tr>    
                     <td><form name="summary_form" action="j2_da_summary.jsp" target="workingFrame">
